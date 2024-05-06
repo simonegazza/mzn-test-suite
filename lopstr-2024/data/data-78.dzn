@@ -1,0 +1,99 @@
+Comps = {frontend0, frontend1, backend0, backend1, backend2, database0, database1};
+mustComps = {frontend0, frontend1};
+Flavs = {tiny, medium, large};
+Nodes = {n1, n2, n3};
+CRes = {CPU, RAM, storage, bwIn, bwOut};
+NRes = {ssl, fwall, encr, avail, latency};
+Flav = [{medium, large}, {medium, large}, {tiny, medium, large}, {tiny, medium, large}, {tiny, medium, large}, {large}, {large}];
+Uses = [{backend2}, {backend1}, {backend2}, {backend1}, {}, {}, {}, {database1}, {database1}, {database0}, {database1}, {database1}, {database0}, {}, {}];
+MAX_BOUND = 1000000;
+
+worstBounds = [0, 0, 0, 0, 0, 0, 0, 0, 0, MAX_BOUND];
+bestBounds = [MAX_BOUND - i | i in worstBounds];
+
+comReq = array2d(CompFlavs, Res, [
+  2, 320, 430, 362, 210, 0, 1, 0, 95, MAX_BOUND,
+  4, 472, 438, 713, 765, 1, 0, 1, 97, MAX_BOUND,
+  4, 316, 436, 583, 704, 1, 0, 1, 97, MAX_BOUND,
+  2, 484, 351, 652, 840, 1, 1, 1, 96, MAX_BOUND,
+  8, 339, 368, 310, 567, 1, 1, 1, 95, MAX_BOUND,
+  2, 461, 357, 828, 253, 0, 1, 1, 97, MAX_BOUND,
+  2, 355, 381, 631, 577, 1, 1, 1, 96, MAX_BOUND,
+  8, 219, 453, 542, 480, 1, 0, 1, 97, MAX_BOUND,
+  2, 490, 307, 581, 580, 0, 0, 1, 95, MAX_BOUND,
+  2, 452, 372, 533, 791, 0, 0, 0, 97, MAX_BOUND,
+  2, 291, 448, 211, 286, 0, 0, 1, 95, MAX_BOUND,
+  4, 273, 402, 255, 778, 1, 1, 1, 96, MAX_BOUND,
+  2, 340, 242, 462, 859, 1, 1, 0, 96, MAX_BOUND,
+  8, 378, 322, 888, 364, 1, 1, 1, 97, MAX_BOUND,
+  2, 336, 342, 870, 504, 0, 1, 1, 97, MAX_BOUND,
+]);
+
+nodeCap = array2d(Nodes0, Res, [bestBounds[r] | r in Res] ++ [
+  16, 56376, 277916, 24821, 13956, 1, 1, 1, 99, 0,
+  32, 34038, 51108, 11969, 13830, 1, 0, 1, 98, 0,
+  16, 18322, 921807, 21853, 10494, 1, 1, 1, 99, 0,
+]);
+
+cost = array2d(Nodes0, Res, [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, % no node
+  17, 7, 19, 0, 0, 0, 0, 0, 0, 0,
+  11, 6, 25, 0, 0, 0, 0, 0, 0, 0,
+  19, 7, 18, 0, 0, 0, 0, 0, 0, 0,
+]);
+
+cons = array2d(Nodes0, Res, [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, % no node
+  10, 2, 49, 0, 0, 0, 0, 0, 0, 0,
+  35, 48, 41, 0, 0, 0, 0, 0, 0, 0,
+  46, 8, 47, 0, 0, 0, 0, 0, 0, 0,
+]);
+
+costWeight = 0;
+consWeight = 1;
+
+costBudget = 37083;
+consBudget = 48794;
+
+depReq = array3d(Comps, Comps, Res, [
+  if c1 = frontend0 /\ c2 = backend2 /\ r = N(avail) then
+    96
+  elseif c1 = frontend1 /\ c2 = backend2 /\ r = N(avail) then
+    96
+  elseif c1 = frontend0 /\ c2 = backend0 /\ r = N(avail) then
+    96
+  elseif c1 = frontend0 /\ c2 = backend1 /\ r = N(avail) then
+    95
+  elseif c1 = frontend1 /\ c2 = backend1 /\ r = N(avail) then
+    96
+  elseif c1 = frontend1 /\ c2 = backend0 /\ r = N(avail) then
+    95
+  else
+    worstBounds[r]
+  endif | c1 in Comps, c2 in Comps, r in Res]);
+
+linkCap = array3d(Nodes0, Nodes0, Res, [
+  if ni = 0 \/ nj = 0 then
+    bestBounds[r]
+  elseif ni = nj /\ r = N(avail) then
+    nodeCap[ni,r]
+  elseif {ni, nj} = {n1, n3} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n1, n2} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n2, n3} /\ r = N(avail) then
+    99
+  else
+    worstBounds[r]
+  endif | ni in Nodes0, nj in Nodes0, r in Res]);
+
+imp = array2d(Comps, Flavs, [
+  2, 3, 9,
+  4, 9, 10,
+  2, 6, 9,
+  1, 8, 10,
+  2, 7, 8,
+  5, 6, 10,
+  4, 8, 10,
+]);
+
