@@ -1,6 +1,7 @@
 # Requirements
 - python >= 3.11
-- MiniZinc >= 2.8.3
+- MiniZinc >= 2.8.3 (solvers: OR Tools CP SAT 9.8.3296, COIN-BC 2.10.11/1.17.9,
+  Gecode 6.3.0, Chuffed 0.13.1)
 - being inside this folder
 
 # Run the script
