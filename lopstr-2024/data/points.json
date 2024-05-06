@@ -1,0 +1,38 @@
+{
+    "cpsatlp": {
+        "optimals": 61,
+        "unsats": 39,
+        "sats": 0,
+        "average_time_to_first_solution": "0.629",
+        "average_optimization_time": "0.909",
+        "average_flattening_time": "0.354",
+        "points": "206.964"
+    },
+    "coinbc": {
+        "optimals": 61,
+        "unsats": 39,
+        "sats": 0,
+        "average_time_to_first_solution": "8.662",
+        "average_optimization_time": "13.391",
+        "average_flattening_time": "0.511",
+        "points": "37.233"
+    },
+    "chuffed": {
+        "optimals": 61,
+        "unsats": 39,
+        "sats": 0,
+        "average_time_to_first_solution": "1.044",
+        "average_optimization_time": "6.671",
+        "average_flattening_time": "0.356",
+        "points": "156.105"
+    },
+    "gecode": {
+        "optimals": 61,
+        "unsats": 39,
+        "sats": 0,
+        "average_time_to_first_solution": "0.630",
+        "average_optimization_time": "1.126",
+        "average_flattening_time": "0.347",
+        "points": "199.698"
+    }
+}
