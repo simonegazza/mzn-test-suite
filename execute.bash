@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-# USAGE: ./execute.bash model amount location
+# USAGE: ./execute.bash model location
 # Where amount is the number of files to generate and location is where to save
 # generated files and statistics
 
-./generator.py $2 -l $3
-./runner.py $1 $3 -l $3
-./stats.py $3/results.json
+./runner.py $1 $2 -l $2
+./stats.py $2/results.json
