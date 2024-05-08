@@ -35,41 +35,44 @@ if __name__ == '__main__':
 
     result = {}
     for solver_name, solutions in challenge_stats.items():
-        optimal_solutions = 0
+        optimals = 0
         unsats = 0
         sats = 0
         optimization_time_sum = 0
         flat_time_sum = 0
         time_first_solution = 0
+        time_last_solution = 0
         for solution in solutions:
+            sorted_time_objectives = sorted(
+                [float(t) for t in solution["objectives"].keys()],
+            )
             flat_time_sum += solution["flat_time"]
             if solution["status"] == "OPTIMAL_SOLUTION":
-                optimal_solutions += 1
-                optimization_time_sum += solution["solve_time"] + solution["flat_time"]
-                time_first_solution += float(min(
-                    solution["objectives"].items(),
-                    key=lambda v : v[1]
-                )[0])
+                optimals += 1
+                optimization_time_sum += solution["solve_time"]
+                time_first_solution += min(sorted_time_objectives)
+                time_last_solution += max(sorted_time_objectives)
             elif solution["status"] == "UNSATISFIABLE":
-                time_first_solution += solution["solve_time"] + solution["flat_time"]
                 unsats += 1
             elif solution["status"] == "SATISFIED":
-                time_first_solution += float(min(
-                    solution["objectives"].items(),
-                    key=lambda v : v[1]
-                )[0])
+                time_first_solution += min(sorted_time_objectives)
+                time_last_solution += max(sorted_time_objectives)
                 sats += 1
 
         result.update({
             solver_name : {
-                "optimals" : optimal_solutions,
+                "optimals" : optimals,
                 "unsats" : unsats,
                 "sats" : sats,
+                "unkowns" : len(solutions) - optimals - unsats - sats,
                 "average_time_to_first_solution" : format_float(
-                    time_first_solution / len(solutions)
+                    time_first_solution / (sats + optimals)
+                ),
+                "average_time_to_last_solution" : format_float(
+                    time_last_solution / (sats + optimals)
                 ),
                 "average_optimization_time" : format_float(
-                    optimization_time_sum / optimal_solutions
+                    optimization_time_sum / optimals
                 ),
                 "average_flattening_time" : format_float(
                     flat_time_sum / len(solutions)
