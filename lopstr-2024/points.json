@@ -1,0 +1,46 @@
+{
+    "cpsatlp": {
+        "optimals": 61,
+        "unsats": 39,
+        "sats": 0,
+        "unkowns": 0,
+        "average_time_to_first_solution": "0.498",
+        "average_time_to_last_solution": "0.536",
+        "average_optimization_time": "0.557",
+        "average_flattening_time": "0.354",
+        "points": "173.350"
+    },
+    "chuffed": {
+        "optimals": 61,
+        "unsats": 39,
+        "sats": 0,
+        "unkowns": 0,
+        "average_time_to_first_solution": "0.888",
+        "average_time_to_last_solution": "1.774",
+        "average_optimization_time": "6.319",
+        "average_flattening_time": "0.356",
+        "points": "113.791"
+    },
+    "gecode": {
+        "optimals": 61,
+        "unsats": 39,
+        "sats": 0,
+        "unkowns": 0,
+        "average_time_to_first_solution": "0.484",
+        "average_time_to_last_solution": "0.614",
+        "average_optimization_time": "0.781",
+        "average_flattening_time": "0.347",
+        "points": "163.886"
+    },
+    "gurobi": {
+        "optimals": 61,
+        "unsats": 39,
+        "sats": 0,
+        "unkowns": 0,
+        "average_time_to_first_solution": "0.579",
+        "average_time_to_last_solution": "0.661",
+        "average_optimization_time": "0.722",
+        "average_flattening_time": "0.423",
+        "points": "148.973"
+    }
+}

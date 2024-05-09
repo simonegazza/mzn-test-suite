@@ -1,0 +1,3888 @@
+{
+    "cpsatlp": [
+        {
+            "problem": "lopstr-2024/data/data-82.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.412,
+            "solve_time": 0.73,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-96.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.343,
+            "solve_time": 0.458,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-69.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.353,
+            "solve_time": 0.419,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-41.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.384,
+            "solve_time": 0.555,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-55.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.35,
+            "solve_time": 0.557,
+            "objectives": {
+                "0.491": 23,
+                "0.508": 24,
+                "0.524": 28,
+                "0.541": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-54.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.37,
+            "solve_time": 0.509,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-40.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.364,
+            "solve_time": 0.567,
+            "objectives": {
+                "0.517": 30,
+                "0.533": 35,
+                "0.55": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-68.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.382,
+            "solve_time": 0.774,
+            "objectives": {
+                "0.565": 27,
+                "0.586": 28,
+                "0.607": 31,
+                "0.652": 35,
+                "0.673": 38,
+                "0.693": 40,
+                "0.713": 46,
+                "0.733": 47,
+                "0.753": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-97.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.359,
+            "solve_time": 0.637,
+            "objectives": {
+                "0.525": 43,
+                "0.543": 48,
+                "0.561": 49,
+                "0.579": 50,
+                "0.596": 51
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-83.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.352,
+            "solve_time": 0.482,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-95.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.36,
+            "solve_time": 0.557,
+            "objectives": {
+                "0.523": 16,
+                "0.539": 20
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-81.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.355,
+            "solve_time": 0.425,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-56.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.334,
+            "solve_time": 0.489,
+            "objectives": {
+                "0.465": 39,
+                "0.477": 42
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-42.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.335,
+            "solve_time": 0.504,
+            "objectives": {
+                "0.455": 35,
+                "0.467": 36,
+                "0.479": 38,
+                "0.492": 41
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-43.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.357,
+            "solve_time": 0.501,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-57.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.343,
+            "solve_time": 0.443,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-80.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.347,
+            "solve_time": 0.479,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-94.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.371,
+            "solve_time": 0.574,
+            "objectives": {
+                "0.532": 21,
+                "0.552": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-90.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.352,
+            "solve_time": 0.56,
+            "objectives": {
+                "0.511": 25,
+                "0.527": 27,
+                "0.544": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-84.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.347,
+            "solve_time": 0.476,
+            "objectives": {
+                "0.459": 31
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-53.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.344,
+            "solve_time": 0.512,
+            "objectives": {
+                "0.475": 36
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-47.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.345,
+            "solve_time": 0.412,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-46.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.355,
+            "solve_time": 0.629,
+            "objectives": {
+                "0.507": 30,
+                "0.523": 32,
+                "0.54": 39,
+                "0.557": 51,
+                "0.573": 52,
+                "0.59": 53
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-52.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.345,
+            "solve_time": 0.587,
+            "objectives": {
+                "0.485": 46,
+                "0.501": 47,
+                "0.517": 48,
+                "0.541": 50,
+                "0.557": 51
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-85.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.337,
+            "solve_time": 0.491,
+            "objectives": {
+                "0.468": 36,
+                "0.48": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-91.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.362,
+            "solve_time": 0.657,
+            "objectives": {
+                "0.521": 38,
+                "0.538": 42,
+                "0.554": 43,
+                "0.57": 51,
+                "0.586": 54,
+                "0.603": 55,
+                "0.642": 58
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-87.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.362,
+            "solve_time": 0.501,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-93.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.389,
+            "solve_time": 0.546,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-44.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.387,
+            "solve_time": 0.669,
+            "objectives": {
+                "0.562": 46,
+                "0.583": 50,
+                "0.604": 55,
+                "0.649": 56
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-50.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.36,
+            "solve_time": 0.596,
+            "objectives": {
+                "0.512": 30,
+                "0.529": 36,
+                "0.545": 53,
+                "0.562": 54
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-78.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.356,
+            "solve_time": 0.474,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-79.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.361,
+            "solve_time": 0.498,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-51.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.369,
+            "solve_time": 0.511,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-45.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.347,
+            "solve_time": 0.416,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-92.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.375,
+            "solve_time": 0.553,
+            "objectives": {
+                "0.531": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-86.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.344,
+            "solve_time": 0.476,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-22.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.325,
+            "solve_time": 0.48,
+            "objectives": {
+                "0.444": 15,
+                "0.457": 18,
+                "0.469": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-36.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.346,
+            "solve_time": 0.51,
+            "objectives": {
+                "0.478": 22,
+                "0.494": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-37.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.364,
+            "solve_time": 0.566,
+            "objectives": {
+                "0.533": 32,
+                "0.55": 42
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-23.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.357,
+            "solve_time": 0.631,
+            "objectives": {
+                "0.523": 43,
+                "0.54": 47,
+                "0.557": 51,
+                "0.574": 54,
+                "0.591": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-09.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.355,
+            "solve_time": 0.496,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-35.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.362,
+            "solve_time": 0.543,
+            "objectives": {
+                "0.51": 21,
+                "0.527": 31
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-21.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.362,
+            "solve_time": 0.549,
+            "objectives": {
+                "0.518": 23,
+                "0.534": 28
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-20.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.363,
+            "solve_time": 0.508,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-34.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.328,
+            "solve_time": 0.492,
+            "objectives": {
+                "0.458": 22,
+                "0.469": 23,
+                "0.481": 26
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-08.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.358,
+            "solve_time": 0.502,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-30.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.342,
+            "solve_time": 0.407,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-24.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.359,
+            "solve_time": 0.614,
+            "objectives": {
+                "0.516": 37,
+                "0.534": 45,
+                "0.551": 46
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-18.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.341,
+            "solve_time": 0.423,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-19.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.333,
+            "solve_time": 0.499,
+            "objectives": {
+                "0.462": 32,
+                "0.474": 33,
+                "0.486": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-25.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.371,
+            "solve_time": 0.521,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-31.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.387,
+            "solve_time": 0.694,
+            "objectives": {
+                "0.577": 47,
+                "0.604": 51,
+                "0.627": 54,
+                "0.674": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-27.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.345,
+            "solve_time": 0.476,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-33.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.319,
+            "solve_time": 0.411,
+            "objectives": {
+                "0.4": 14
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-32.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.32,
+            "solve_time": 0.513,
+            "objectives": {
+                "0.44": 29,
+                "0.452": 38,
+                "0.465": 39,
+                "0.476": 40,
+                "0.489": 46,
+                "0.501": 47
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-26.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.379,
+            "solve_time": 0.516,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-03.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.357,
+            "solve_time": 0.575,
+            "objectives": {
+                "0.512": 40,
+                "0.528": 46,
+                "0.544": 55,
+                "0.56": 57
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-17.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.328,
+            "solve_time": 0.442,
+            "objectives": {
+                "0.43": 25
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-16.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.336,
+            "solve_time": 0.52,
+            "objectives": {
+                "0.472": 32,
+                "0.483": 38,
+                "0.495": 42,
+                "0.507": 44
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-02.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.383,
+            "solve_time": 0.546,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-28.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.342,
+            "solve_time": 0.543,
+            "objectives": {
+                "0.481": 25,
+                "0.497": 32,
+                "0.512": 41,
+                "0.528": 44
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-14.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.363,
+            "solve_time": 0.457,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-00.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.369,
+            "solve_time": 0.594,
+            "objectives": {
+                "0.514": 33,
+                "0.535": 38,
+                "0.556": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-01.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.341,
+            "solve_time": 0.407,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-15.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.351,
+            "solve_time": 0.535,
+            "objectives": {
+                "0.501": 16,
+                "0.518": 19
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-29.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.323,
+            "solve_time": 0.442,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-11.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.335,
+            "solve_time": 0.496,
+            "objectives": {
+                "0.484": 16
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-05.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.375,
+            "solve_time": 0.445,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-39.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.348,
+            "solve_time": 0.527,
+            "objectives": {
+                "0.494": 33,
+                "0.511": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-38.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.332,
+            "solve_time": 0.504,
+            "objectives": {
+                "0.452": 28,
+                "0.465": 36,
+                "0.478": 42,
+                "0.491": 43
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-04.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.338,
+            "solve_time": 0.404,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-10.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.348,
+            "solve_time": 0.514,
+            "objectives": {
+                "0.482": 25,
+                "0.498": 29
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-06.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.334,
+            "solve_time": 0.447,
+            "objectives": {
+                "0.436": 25
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-12.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.368,
+            "solve_time": 0.612,
+            "objectives": {
+                "0.531": 46,
+                "0.552": 53,
+                "0.573": 54
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-13.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.341,
+            "solve_time": 0.446,
+            "objectives": {
+                "0.43": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-07.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.341,
+            "solve_time": 0.425,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-48.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.356,
+            "solve_time": 0.5,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-60.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.373,
+            "solve_time": 0.547,
+            "objectives": {
+                "0.526": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-74.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.348,
+            "solve_time": 0.498,
+            "objectives": {
+                "0.482": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-75.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.367,
+            "solve_time": 0.611,
+            "objectives": {
+                "0.526": 33,
+                "0.544": 35,
+                "0.56": 36,
+                "0.578": 38
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-61.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.335,
+            "solve_time": 0.509,
+            "objectives": {
+                "0.472": 24,
+                "0.484": 28,
+                "0.497": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-49.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.351,
+            "solve_time": 0.613,
+            "objectives": {
+                "0.502": 33,
+                "0.518": 40,
+                "0.533": 44,
+                "0.549": 48,
+                "0.565": 49,
+                "0.581": 52
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-88.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.353,
+            "solve_time": 0.423,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-77.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.346,
+            "solve_time": 0.495,
+            "objectives": {
+                "0.48": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-63.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.353,
+            "solve_time": 0.522,
+            "objectives": {
+                "0.499": 34
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-62.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.326,
+            "solve_time": 0.479,
+            "objectives": {
+                "0.455": 29,
+                "0.467": 36
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-76.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.343,
+            "solve_time": 0.457,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-89.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.384,
+            "solve_time": 0.608,
+            "objectives": {
+                "0.566": 39,
+                "0.587": 43
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-99.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.345,
+            "solve_time": 0.513,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-72.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.363,
+            "solve_time": 0.44,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-66.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.342,
+            "solve_time": 0.496,
+            "objectives": {
+                "0.484": 22
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-67.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.393,
+            "solve_time": 0.695,
+            "objectives": {
+                "0.606": 44,
+                "0.628": 50,
+                "0.65": 53
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-73.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.359,
+            "solve_time": 0.691,
+            "objectives": {
+                "0.516": 28,
+                "0.533": 29,
+                "0.549": 32,
+                "0.566": 34,
+                "0.582": 35,
+                "0.622": 38,
+                "0.671": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-98.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.356,
+            "solve_time": 0.598,
+            "objectives": {
+                "0.516": 46,
+                "0.533": 47,
+                "0.55": 49,
+                "0.566": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-65.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.331,
+            "solve_time": 0.417,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-71.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.387,
+            "solve_time": 0.695,
+            "objectives": {
+                "0.564": 29,
+                "0.585": 38,
+                "0.61": 40,
+                "0.655": 43,
+                "0.675": 45
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-59.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.327,
+            "solve_time": 0.501,
+            "objectives": {
+                "0.452": 34,
+                "0.464": 35,
+                "0.476": 39,
+                "0.488": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-58.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.384,
+            "solve_time": 0.581,
+            "objectives": {
+                "0.56": 27
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-70.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.354,
+            "solve_time": 0.555,
+            "objectives": {
+                "0.487": 29,
+                "0.504": 30,
+                "0.521": 31,
+                "0.538": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-64.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.363,
+            "solve_time": 0.61,
+            "objectives": {
+                "0.523": 37,
+                "0.541": 41,
+                "0.558": 43,
+                "0.575": 50
+            }
+        }
+    ],
+    "chuffed": [
+        {
+            "problem": "lopstr-2024/data/data-82.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.38,
+            "solve_time": 0.942,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-96.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.338,
+            "solve_time": 0.841,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-69.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.337,
+            "solve_time": 0.96,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-41.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.375,
+            "solve_time": 1.162,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-55.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.347,
+            "solve_time": 0.963,
+            "objectives": {
+                "0.86": 21,
+                "0.877": 23,
+                "0.893": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-54.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.36,
+            "solve_time": 0.958,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-40.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.355,
+            "solve_time": 1.082,
+            "objectives": {
+                "0.923": 24,
+                "0.963": 30,
+                "1.04": 35,
+                "1.057": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-68.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.384,
+            "solve_time": 5.272,
+            "objectives": {
+                "0.921": 36,
+                "0.979": 37,
+                "1.0": 41,
+                "1.25": 43,
+                "1.321": 46,
+                "1.548": 53,
+                "1.838": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-97.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.351,
+            "solve_time": 2.962,
+            "objectives": {
+                "0.821": 34,
+                "0.838": 41,
+                "0.874": 44,
+                "0.891": 46,
+                "0.974": 47,
+                "1.542": 49,
+                "2.433": 51
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-83.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.353,
+            "solve_time": 0.836,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-95.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.357,
+            "solve_time": 0.903,
+            "objectives": {
+                "0.88": 16,
+                "0.903": 20
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-81.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.351,
+            "solve_time": 0.949,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-56.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.337,
+            "solve_time": 2.05,
+            "objectives": {
+                "0.732": 33,
+                "0.744": 35,
+                "0.756": 39,
+                "0.851": 42
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-42.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.325,
+            "solve_time": 0.862,
+            "objectives": {
+                "0.824": 23,
+                "0.837": 34,
+                "0.85": 38,
+                "0.862": 41
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-43.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.345,
+            "solve_time": 0.926,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-57.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.342,
+            "solve_time": 0.816,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-80.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.339,
+            "solve_time": 0.833,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-94.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.372,
+            "solve_time": 1.051,
+            "objectives": {
+                "1.03": 21,
+                "1.051": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-90.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.353,
+            "solve_time": 0.937,
+            "objectives": {
+                "0.906": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-84.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.354,
+            "solve_time": 0.923,
+            "objectives": {
+                "0.89": 28,
+                "0.906": 29,
+                "0.923": 31
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-53.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.338,
+            "solve_time": 0.919,
+            "objectives": {
+                "0.892": 36
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-47.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.349,
+            "solve_time": 0.876,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-46.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.359,
+            "solve_time": 1.49,
+            "objectives": {
+                "0.938": 49,
+                "0.977": 50,
+                "1.131": 51,
+                "1.148": 52,
+                "1.164": 53
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-52.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.343,
+            "solve_time": 2.166,
+            "objectives": {
+                "0.801": 41,
+                "0.817": 43,
+                "0.833": 45,
+                "0.849": 46,
+                "0.866": 47,
+                "0.934": 48,
+                "0.974": 50,
+                "0.993": 51
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-85.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.34,
+            "solve_time": 0.787,
+            "objectives": {
+                "0.742": 26,
+                "0.754": 30,
+                "0.765": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-91.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.378,
+            "solve_time": 47.598,
+            "objectives": {
+                "0.907": 37,
+                "0.923": 43,
+                "0.939": 54,
+                "1.757": 58
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-87.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.394,
+            "solve_time": 0.959,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-93.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.384,
+            "solve_time": 1.004,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-44.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.383,
+            "solve_time": 3.147,
+            "objectives": {
+                "0.991": 50,
+                "1.141": 54,
+                "1.515": 55,
+                "2.623": 56
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-50.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.36,
+            "solve_time": 2.016,
+            "objectives": {
+                "0.824": 29,
+                "0.841": 45,
+                "0.858": 46,
+                "0.875": 53,
+                "1.785": 54
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-78.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.437,
+            "solve_time": 1.299,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-79.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.38,
+            "solve_time": 0.879,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-51.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.358,
+            "solve_time": 0.882,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-45.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.351,
+            "solve_time": 0.886,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-92.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.366,
+            "solve_time": 1.0,
+            "objectives": {
+                "0.985": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-86.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.343,
+            "solve_time": 0.812,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-22.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.326,
+            "solve_time": 0.755,
+            "objectives": {
+                "0.752": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-36.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.343,
+            "solve_time": 0.919,
+            "objectives": {
+                "0.903": 22,
+                "0.919": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-37.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.376,
+            "solve_time": 1.122,
+            "objectives": {
+                "0.904": 23,
+                "0.942": 41,
+                "0.959": 42
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-23.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.36,
+            "solve_time": 159.914,
+            "objectives": {
+                "0.858": 38,
+                "0.985": 42,
+                "1.002": 46,
+                "1.019": 50,
+                "1.036": 51,
+                "1.076": 54,
+                "1.856": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-09.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.418,
+            "solve_time": 1.08,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-35.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.374,
+            "solve_time": 1.011,
+            "objectives": {
+                "0.957": 29,
+                "0.974": 31
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-21.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.362,
+            "solve_time": 1.048,
+            "objectives": {
+                "0.984": 23,
+                "1.048": 28
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-20.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.366,
+            "solve_time": 0.957,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-34.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.33,
+            "solve_time": 0.786,
+            "objectives": {
+                "0.774": 22,
+                "0.786": 26
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-08.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.356,
+            "solve_time": 0.866,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-30.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.348,
+            "solve_time": 0.899,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-24.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.36,
+            "solve_time": 15.249,
+            "objectives": {
+                "0.832": 38,
+                "0.859": 45,
+                "0.876": 46
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-18.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.361,
+            "solve_time": 0.821,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-19.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.347,
+            "solve_time": 0.864,
+            "objectives": {
+                "0.806": 25,
+                "0.839": 29,
+                "0.851": 30,
+                "0.863": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-25.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.375,
+            "solve_time": 0.946,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-31.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.385,
+            "solve_time": 84.855,
+            "objectives": {
+                "1.048": 38,
+                "1.119": 43,
+                "1.177": 44,
+                "1.525": 45,
+                "1.953": 49,
+                "2.255": 52,
+                "13.719": 54,
+                "43.281": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-27.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.404,
+            "solve_time": 1.026,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-33.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.333,
+            "solve_time": 0.766,
+            "objectives": {
+                "0.766": 14
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-32.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.325,
+            "solve_time": 1.111,
+            "objectives": {
+                "0.76": 40,
+                "0.772": 46,
+                "1.111": 47
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-26.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.368,
+            "solve_time": 0.985,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-03.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.355,
+            "solve_time": 1.557,
+            "objectives": {
+                "1.093": 44,
+                "1.114": 53,
+                "1.16": 55,
+                "1.179": 57
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-17.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.324,
+            "solve_time": 0.829,
+            "objectives": {
+                "0.816": 19,
+                "0.829": 25
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-16.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.338,
+            "solve_time": 1.145,
+            "objectives": {
+                "0.729": 30,
+                "0.741": 33,
+                "0.777": 38,
+                "0.825": 41,
+                "0.837": 42,
+                "0.864": 44
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-02.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.379,
+            "solve_time": 1.234,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-28.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.338,
+            "solve_time": 1.189,
+            "objectives": {
+                "0.892": 25,
+                "0.908": 36,
+                "0.924": 37,
+                "0.939": 40,
+                "0.981": 41,
+                "1.041": 44
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-14.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.36,
+            "solve_time": 0.94,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-00.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.369,
+            "solve_time": 1.162,
+            "objectives": {
+                "0.973": 34,
+                "1.03": 35,
+                "1.119": 38,
+                "1.143": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-01.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.34,
+            "solve_time": 0.836,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-15.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.345,
+            "solve_time": 0.866,
+            "objectives": {
+                "0.849": 16,
+                "0.866": 19
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-29.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.324,
+            "solve_time": 0.755,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-11.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.337,
+            "solve_time": 0.898,
+            "objectives": {
+                "0.875": 16
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-05.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.365,
+            "solve_time": 1.009,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-39.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.343,
+            "solve_time": 1.21,
+            "objectives": {
+                "0.86": 29,
+                "0.9": 33,
+                "0.916": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-38.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.327,
+            "solve_time": 0.849,
+            "objectives": {
+                "0.785": 30,
+                "0.798": 33,
+                "0.811": 37,
+                "0.824": 40,
+                "0.836": 41,
+                "0.849": 43
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-04.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.335,
+            "solve_time": 0.786,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-10.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.342,
+            "solve_time": 0.923,
+            "objectives": {
+                "0.909": 29
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-06.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.329,
+            "solve_time": 0.784,
+            "objectives": {
+                "0.784": 25
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-12.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.364,
+            "solve_time": 1.607,
+            "objectives": {
+                "0.915": 44,
+                "0.954": 49,
+                "0.974": 53,
+                "1.128": 54
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-13.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.342,
+            "solve_time": 0.91,
+            "objectives": {
+                "0.91": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-07.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.34,
+            "solve_time": 0.785,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-48.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.357,
+            "solve_time": 0.966,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-60.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.367,
+            "solve_time": 1.02,
+            "objectives": {
+                "1.02": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-74.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.344,
+            "solve_time": 0.859,
+            "objectives": {
+                "0.848": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-75.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.367,
+            "solve_time": 1.869,
+            "objectives": {
+                "0.877": 38
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-61.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.336,
+            "solve_time": 0.798,
+            "objectives": {
+                "0.776": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-49.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.353,
+            "solve_time": 1.56,
+            "objectives": {
+                "0.879": 48,
+                "0.924": 51,
+                "1.316": 52
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-88.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.352,
+            "solve_time": 0.872,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-77.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.342,
+            "solve_time": 0.937,
+            "objectives": {
+                "0.937": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-63.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.35,
+            "solve_time": 0.883,
+            "objectives": {
+                "0.865": 33,
+                "0.883": 34
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-62.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.318,
+            "solve_time": 0.822,
+            "objectives": {
+                "0.781": 36
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-76.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.342,
+            "solve_time": 0.835,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-89.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.384,
+            "solve_time": 1.561,
+            "objectives": {
+                "1.055": 33,
+                "1.078": 37,
+                "1.121": 39,
+                "1.317": 43
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-99.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.342,
+            "solve_time": 1.026,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-72.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.351,
+            "solve_time": 0.948,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-66.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.343,
+            "solve_time": 0.787,
+            "objectives": {
+                "0.787": 22
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-67.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.383,
+            "solve_time": 1.52,
+            "objectives": {
+                "1.069": 46,
+                "1.095": 50,
+                "1.442": 52,
+                "1.488": 53
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-73.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.382,
+            "solve_time": 3.726,
+            "objectives": {
+                "0.868": 31,
+                "0.885": 34,
+                "0.977": 35,
+                "1.211": 38,
+                "1.228": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-98.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.374,
+            "solve_time": 2.737,
+            "objectives": {
+                "0.841": 42,
+                "1.23": 44,
+                "1.248": 49,
+                "1.3": 50,
+                "1.316": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-65.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.334,
+            "solve_time": 0.746,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-71.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.386,
+            "solve_time": 2.571,
+            "objectives": {
+                "1.444": 38,
+                "1.467": 43,
+                "1.488": 45
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-59.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.324,
+            "solve_time": 1.235,
+            "objectives": {
+                "0.708": 25,
+                "0.72": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-58.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.388,
+            "solve_time": 1.108,
+            "objectives": {
+                "1.087": 24,
+                "1.108": 27
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-70.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.346,
+            "solve_time": 0.867,
+            "objectives": {
+                "0.833": 30,
+                "0.85": 31,
+                "0.867": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-64.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.361,
+            "solve_time": 2.112,
+            "objectives": {
+                "0.913": 32,
+                "0.93": 34,
+                "0.946": 36,
+                "0.962": 40,
+                "1.011": 41,
+                "1.219": 45,
+                "1.273": 50
+            }
+        }
+    ],
+    "gecode": [
+        {
+            "problem": "lopstr-2024/data/data-82.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.355,
+            "solve_time": 1.224,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-96.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.327,
+            "solve_time": 0.452,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-69.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.334,
+            "solve_time": 0.451,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-41.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.376,
+            "solve_time": 0.744,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-55.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.336,
+            "solve_time": 0.535,
+            "objectives": {
+                "0.469": 18,
+                "0.485": 23,
+                "0.502": 24,
+                "0.518": 28,
+                "0.535": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-54.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.361,
+            "solve_time": 0.495,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-40.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.348,
+            "solve_time": 0.581,
+            "objectives": {
+                "0.481": 22,
+                "0.498": 24,
+                "0.515": 27,
+                "0.531": 30,
+                "0.548": 35,
+                "0.564": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-68.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.373,
+            "solve_time": 1.7,
+            "objectives": {
+                "0.514": 39,
+                "0.541": 42,
+                "0.562": 48,
+                "1.088": 49,
+                "1.14": 50,
+                "1.577": 53,
+                "1.597": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-97.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.353,
+            "solve_time": 0.689,
+            "objectives": {
+                "0.485": 22,
+                "0.502": 27,
+                "0.519": 30,
+                "0.536": 33,
+                "0.552": 38,
+                "0.569": 41,
+                "0.609": 42,
+                "0.625": 44,
+                "0.641": 47,
+                "0.657": 49,
+                "0.673": 50,
+                "0.689": 51
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-83.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.342,
+            "solve_time": 0.463,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-95.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.353,
+            "solve_time": 0.504,
+            "objectives": {
+                "0.487": 16,
+                "0.504": 20
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-81.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.336,
+            "solve_time": 0.452,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-56.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.325,
+            "solve_time": 0.545,
+            "objectives": {
+                "0.454": 28,
+                "0.466": 35,
+                "0.486": 39,
+                "0.498": 41,
+                "0.542": 42
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-42.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.324,
+            "solve_time": 0.531,
+            "objectives": {
+                "0.466": 23,
+                "0.479": 29,
+                "0.493": 33,
+                "0.506": 36,
+                "0.518": 38,
+                "0.531": 41
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-43.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.355,
+            "solve_time": 0.487,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-57.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.329,
+            "solve_time": 0.451,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-80.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.339,
+            "solve_time": 0.459,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-94.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.357,
+            "solve_time": 0.542,
+            "objectives": {
+                "0.498": 21,
+                "0.52": 22,
+                "0.542": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-90.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.342,
+            "solve_time": 0.621,
+            "objectives": {
+                "0.474": 25,
+                "0.49": 27,
+                "0.562": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-84.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.335,
+            "solve_time": 0.515,
+            "objectives": {
+                "0.467": 26,
+                "0.483": 28,
+                "0.5": 29,
+                "0.515": 31
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-53.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.334,
+            "solve_time": 0.497,
+            "objectives": {
+                "0.467": 26,
+                "0.482": 33,
+                "0.497": 36
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-47.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.333,
+            "solve_time": 0.45,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-46.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.344,
+            "solve_time": 0.668,
+            "objectives": {
+                "0.478": 29,
+                "0.494": 34,
+                "0.511": 39,
+                "0.528": 40,
+                "0.544": 41,
+                "0.56": 42,
+                "0.577": 45,
+                "0.619": 50,
+                "0.637": 51,
+                "0.652": 52,
+                "0.668": 53
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-52.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.334,
+            "solve_time": 0.665,
+            "objectives": {
+                "0.469": 34,
+                "0.485": 47,
+                "0.509": 51
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-85.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.327,
+            "solve_time": 0.512,
+            "objectives": {
+                "0.456": 26,
+                "0.467": 29,
+                "0.478": 30,
+                "0.49": 36,
+                "0.501": 37,
+                "0.512": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-91.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.343,
+            "solve_time": 2.429,
+            "objectives": {
+                "0.473": 37,
+                "0.489": 38,
+                "0.505": 45,
+                "0.52": 47,
+                "0.536": 50,
+                "0.552": 54,
+                "1.12": 58
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-87.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.343,
+            "solve_time": 0.469,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-93.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.381,
+            "solve_time": 0.524,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-44.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.37,
+            "solve_time": 0.956,
+            "objectives": {
+                "0.51": 44,
+                "0.531": 45,
+                "0.552": 48,
+                "0.573": 49,
+                "0.616": 50,
+                "0.782": 51,
+                "0.87": 55,
+                "0.889": 56
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-50.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.349,
+            "solve_time": 0.992,
+            "objectives": {
+                "0.485": 27,
+                "0.501": 31,
+                "0.519": 32,
+                "0.535": 37,
+                "0.552": 38,
+                "0.569": 44,
+                "0.611": 46,
+                "0.836": 48,
+                "0.854": 54
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-78.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.34,
+            "solve_time": 0.461,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-79.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.337,
+            "solve_time": 0.458,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-51.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.351,
+            "solve_time": 0.486,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-45.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.329,
+            "solve_time": 0.445,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-92.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.365,
+            "solve_time": 0.537,
+            "objectives": {
+                "0.517": 31,
+                "0.537": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-86.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.332,
+            "solve_time": 0.452,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-22.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.317,
+            "solve_time": 0.444,
+            "objectives": {
+                "0.444": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-36.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.33,
+            "solve_time": 0.481,
+            "objectives": {
+                "0.466": 22,
+                "0.481": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-37.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.351,
+            "solve_time": 0.535,
+            "objectives": {
+                "0.486": 33,
+                "0.503": 41,
+                "0.52": 42
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-23.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.348,
+            "solve_time": 2.302,
+            "objectives": {
+                "0.482": 20,
+                "0.498": 22,
+                "0.515": 26,
+                "0.531": 30,
+                "0.546": 31,
+                "0.562": 37,
+                "0.601": 39,
+                "0.617": 43,
+                "0.633": 47,
+                "0.648": 48,
+                "0.72": 50,
+                "0.736": 51,
+                "0.774": 54,
+                "0.789": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-09.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.344,
+            "solve_time": 0.488,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-35.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.351,
+            "solve_time": 0.519,
+            "objectives": {
+                "0.484": 21,
+                "0.502": 29,
+                "0.519": 31
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-21.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.357,
+            "solve_time": 0.55,
+            "objectives": {
+                "0.526": 23,
+                "0.548": 28
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-20.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.355,
+            "solve_time": 0.478,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-34.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.319,
+            "solve_time": 0.493,
+            "objectives": {
+                "0.445": 16,
+                "0.457": 17,
+                "0.469": 22,
+                "0.481": 23,
+                "0.492": 26
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-08.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.343,
+            "solve_time": 0.511,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-30.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.335,
+            "solve_time": 0.451,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-24.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.354,
+            "solve_time": 1.21,
+            "objectives": {
+                "0.487": 29,
+                "0.504": 31,
+                "0.522": 36,
+                "0.539": 38,
+                "0.557": 39,
+                "0.574": 40,
+                "0.791": 42,
+                "0.807": 44,
+                "1.045": 45,
+                "1.061": 46
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-18.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.324,
+            "solve_time": 0.442,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-19.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.333,
+            "solve_time": 0.513,
+            "objectives": {
+                "0.475": 22,
+                "0.488": 32,
+                "0.501": 33,
+                "0.513": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-25.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.351,
+            "solve_time": 0.495,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-31.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.369,
+            "solve_time": 5.792,
+            "objectives": {
+                "0.509": 27,
+                "0.529": 31,
+                "0.55": 37,
+                "0.571": 45,
+                "0.615": 49,
+                "0.635": 50,
+                "0.737": 52,
+                "0.974": 54,
+                "1.005": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-27.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.675,
+            "solve_time": 0.832,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-33.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.314,
+            "solve_time": 0.441,
+            "objectives": {
+                "0.441": 14
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-32.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.345,
+            "solve_time": 0.557,
+            "objectives": {
+                "0.48": 23,
+                "0.493": 32,
+                "0.505": 38,
+                "0.517": 42,
+                "0.53": 43,
+                "0.542": 46,
+                "0.554": 47
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-26.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.354,
+            "solve_time": 0.486,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-03.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.389,
+            "solve_time": 0.749,
+            "objectives": {
+                "0.555": 26,
+                "0.577": 44,
+                "0.601": 48,
+                "0.625": 50,
+                "0.649": 52,
+                "0.674": 54,
+                "0.697": 55,
+                "0.749": 57
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-17.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.332,
+            "solve_time": 0.46,
+            "objectives": {
+                "0.46": 25
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-16.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.326,
+            "solve_time": 0.682,
+            "objectives": {
+                "0.458": 16,
+                "0.471": 25,
+                "0.483": 29,
+                "0.496": 30,
+                "0.508": 32,
+                "0.52": 38,
+                "0.532": 41,
+                "0.544": 42,
+                "0.632": 44
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-02.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.377,
+            "solve_time": 0.588,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-28.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.334,
+            "solve_time": 0.515,
+            "objectives": {
+                "0.467": 25,
+                "0.483": 37,
+                "0.499": 41,
+                "0.515": 44
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-14.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.35,
+            "solve_time": 0.479,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-00.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.366,
+            "solve_time": 0.598,
+            "objectives": {
+                "0.556": 32,
+                "0.577": 35,
+                "0.598": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-01.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.346,
+            "solve_time": 0.463,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-15.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.346,
+            "solve_time": 0.496,
+            "objectives": {
+                "0.48": 16,
+                "0.496": 19
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-29.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.321,
+            "solve_time": 0.442,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-11.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.352,
+            "solve_time": 0.549,
+            "objectives": {
+                "0.496": 14,
+                "0.51": 16
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-05.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.357,
+            "solve_time": 0.479,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-39.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.335,
+            "solve_time": 0.577,
+            "objectives": {
+                "0.472": 28,
+                "0.488": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-38.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.325,
+            "solve_time": 0.557,
+            "objectives": {
+                "0.476": 14,
+                "0.492": 22,
+                "0.505": 27,
+                "0.518": 31,
+                "0.531": 39,
+                "0.544": 42,
+                "0.557": 43
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-04.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.326,
+            "solve_time": 0.443,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-10.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.333,
+            "solve_time": 0.512,
+            "objectives": {
+                "0.47": 25,
+                "0.488": 29
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-06.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.318,
+            "solve_time": 0.457,
+            "objectives": {
+                "0.445": 22,
+                "0.457": 25
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-12.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.359,
+            "solve_time": 0.845,
+            "objectives": {
+                "0.5": 26,
+                "0.52": 28,
+                "0.541": 29,
+                "0.562": 30,
+                "0.583": 31,
+                "0.627": 32,
+                "0.647": 33,
+                "0.667": 37,
+                "0.686": 38,
+                "0.706": 40,
+                "0.725": 41,
+                "0.743": 44,
+                "0.763": 46,
+                "0.784": 49,
+                "0.804": 52,
+                "0.824": 53,
+                "0.845": 54
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-13.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.339,
+            "solve_time": 0.476,
+            "objectives": {
+                "0.476": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-07.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.334,
+            "solve_time": 0.45,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-48.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.349,
+            "solve_time": 0.496,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-60.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.365,
+            "solve_time": 0.514,
+            "objectives": {
+                "0.514": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-74.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.328,
+            "solve_time": 0.474,
+            "objectives": {
+                "0.46": 28,
+                "0.474": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-75.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.344,
+            "solve_time": 0.605,
+            "objectives": {
+                "0.478": 30,
+                "0.496": 35,
+                "0.513": 36,
+                "0.551": 38
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-61.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.332,
+            "solve_time": 0.49,
+            "objectives": {
+                "0.465": 24,
+                "0.477": 28,
+                "0.49": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-49.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.349,
+            "solve_time": 0.638,
+            "objectives": {
+                "0.483": 28,
+                "0.498": 29,
+                "0.513": 32,
+                "0.527": 35,
+                "0.543": 39,
+                "0.558": 40,
+                "0.572": 43,
+                "0.61": 47,
+                "0.624": 48,
+                "0.638": 52
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-88.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.339,
+            "solve_time": 0.458,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-77.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.337,
+            "solve_time": 0.472,
+            "objectives": {
+                "0.472": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-63.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.345,
+            "solve_time": 0.545,
+            "objectives": {
+                "0.479": 15,
+                "0.496": 21,
+                "0.513": 22,
+                "0.529": 27,
+                "0.545": 34
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-62.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.324,
+            "solve_time": 0.473,
+            "objectives": {
+                "0.449": 20,
+                "0.461": 29,
+                "0.473": 36
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-76.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.336,
+            "solve_time": 0.464,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-89.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.38,
+            "solve_time": 1.334,
+            "objectives": {
+                "0.522": 24,
+                "0.542": 33,
+                "0.728": 39,
+                "1.112": 43
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-99.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.331,
+            "solve_time": 0.502,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-72.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.353,
+            "solve_time": 0.471,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-66.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.332,
+            "solve_time": 0.46,
+            "objectives": {
+                "0.46": 22
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-67.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.381,
+            "solve_time": 1.003,
+            "objectives": {
+                "0.578": 46,
+                "0.601": 52,
+                "0.623": 53
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-73.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.355,
+            "solve_time": 1.069,
+            "objectives": {
+                "0.487": 24,
+                "0.504": 27,
+                "0.52": 30,
+                "0.537": 31,
+                "0.552": 34,
+                "0.569": 35,
+                "0.607": 38,
+                "0.622": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-98.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.354,
+            "solve_time": 0.693,
+            "objectives": {
+                "0.486": 32,
+                "0.503": 42,
+                "0.52": 51,
+                "0.602": 53,
+                "0.676": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-65.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.31,
+            "solve_time": 0.428,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-71.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.364,
+            "solve_time": 1.11,
+            "objectives": {
+                "0.552": 34,
+                "0.615": 36,
+                "0.677": 37,
+                "0.697": 39,
+                "0.741": 43,
+                "0.761": 45
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-59.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.322,
+            "solve_time": 0.599,
+            "objectives": {
+                "0.447": 17,
+                "0.459": 18,
+                "0.471": 26,
+                "0.483": 27,
+                "0.495": 29,
+                "0.507": 30,
+                "0.519": 31,
+                "0.53": 34,
+                "0.542": 35,
+                "0.554": 38,
+                "0.565": 39,
+                "0.599": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-58.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.374,
+            "solve_time": 0.538,
+            "objectives": {
+                "0.517": 24,
+                "0.538": 27
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-70.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.346,
+            "solve_time": 0.514,
+            "objectives": {
+                "0.479": 22,
+                "0.497": 31,
+                "0.514": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-64.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.351,
+            "solve_time": 0.774,
+            "objectives": {
+                "0.485": 34,
+                "0.502": 35,
+                "0.519": 39,
+                "0.536": 41,
+                "0.553": 43,
+                "0.57": 44,
+                "0.609": 50
+            }
+        }
+    ],
+    "gurobi": [
+        {
+            "problem": "lopstr-2024/data/data-82.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.492,
+            "solve_time": 0.766,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-96.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.41,
+            "solve_time": 0.537,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-69.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.416,
+            "solve_time": 0.455,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-41.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.466,
+            "solve_time": 2.648,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-55.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.418,
+            "solve_time": 0.64,
+            "objectives": {
+                "0.495": 24,
+                "0.549": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-54.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.435,
+            "solve_time": 0.509,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-40.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.441,
+            "solve_time": 0.615,
+            "objectives": {
+                "0.534": 30,
+                "0.613": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-68.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.466,
+            "solve_time": 1.578,
+            "objectives": {
+                "0.921": 50,
+                "1.004": 53,
+                "1.318": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-97.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.438,
+            "solve_time": 0.997,
+            "objectives": {
+                "0.707": 51
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-83.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.415,
+            "solve_time": 0.622,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-95.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.443,
+            "solve_time": 0.697,
+            "objectives": {
+                "0.663": 20
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-81.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.413,
+            "solve_time": 0.453,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-56.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.396,
+            "solve_time": 0.753,
+            "objectives": {
+                "0.624": 41,
+                "0.721": 42
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-42.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.395,
+            "solve_time": 0.53,
+            "objectives": {
+                "0.462": 36,
+                "0.475": 38,
+                "0.517": 39,
+                "0.53": 41
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-43.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.435,
+            "solve_time": 0.584,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-57.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.415,
+            "solve_time": 0.479,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-80.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.42,
+            "solve_time": 0.629,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-94.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.447,
+            "solve_time": 0.582,
+            "objectives": {
+                "0.543": 22,
+                "0.564": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-90.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.436,
+            "solve_time": 0.812,
+            "objectives": {
+                "0.713": 25,
+                "0.732": 27,
+                "0.806": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-84.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.409,
+            "solve_time": 0.49,
+            "objectives": {
+                "0.474": 26,
+                "0.489": 31
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-53.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.415,
+            "solve_time": 0.568,
+            "objectives": {
+                "0.488": 26,
+                "0.524": 36
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-47.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.413,
+            "solve_time": 0.456,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-46.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.433,
+            "solve_time": 0.707,
+            "objectives": {
+                "0.514": 36,
+                "0.603": 44,
+                "0.626": 50,
+                "0.671": 52,
+                "0.702": 53
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-52.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.414,
+            "solve_time": 1.001,
+            "objectives": {
+                "0.636": 50,
+                "0.884": 51
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-85.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.4,
+            "solve_time": 0.607,
+            "objectives": {
+                "0.505": 36,
+                "0.518": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-91.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.433,
+            "solve_time": 0.609,
+            "objectives": {
+                "0.517": 29,
+                "0.543": 33,
+                "0.572": 58
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-87.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.436,
+            "solve_time": 0.573,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-93.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.465,
+            "solve_time": 0.62,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-44.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.462,
+            "solve_time": 1.206,
+            "objectives": {
+                "0.784": 53,
+                "0.829": 54,
+                "0.851": 56
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-50.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.435,
+            "solve_time": 0.878,
+            "objectives": {
+                "0.518": 32,
+                "0.54": 43,
+                "0.705": 45,
+                "0.742": 52,
+                "0.779": 53,
+                "0.83": 54
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-78.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.419,
+            "solve_time": 0.508,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-79.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.431,
+            "solve_time": 0.576,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-51.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.438,
+            "solve_time": 0.534,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-45.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.41,
+            "solve_time": 0.463,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-92.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.422,
+            "solve_time": 0.599,
+            "objectives": {
+                "0.588": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-86.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.391,
+            "solve_time": 0.472,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-22.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.383,
+            "solve_time": 0.497,
+            "objectives": {
+                "0.45": 15,
+                "0.468": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-36.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.412,
+            "solve_time": 0.554,
+            "objectives": {
+                "0.481": 22,
+                "0.539": 23
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-37.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.44,
+            "solve_time": 0.832,
+            "objectives": {
+                "0.779": 41,
+                "0.816": 42
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-23.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.439,
+            "solve_time": 0.627,
+            "objectives": {
+                "0.53": 34,
+                "0.574": 44,
+                "0.609": 54,
+                "0.627": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-09.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.434,
+            "solve_time": 0.608,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-35.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.437,
+            "solve_time": 0.661,
+            "objectives": {
+                "0.529": 31
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-21.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.427,
+            "solve_time": 0.723,
+            "objectives": {
+                "0.696": 28
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-20.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.441,
+            "solve_time": 0.52,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-34.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.386,
+            "solve_time": 0.601,
+            "objectives": {
+                "0.453": 22,
+                "0.518": 26
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-08.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.429,
+            "solve_time": 0.916,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-30.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.41,
+            "solve_time": 0.459,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-24.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.428,
+            "solve_time": 1.64,
+            "objectives": {
+                "0.511": 35,
+                "0.55": 37,
+                "0.615": 42,
+                "0.801": 44,
+                "0.837": 45,
+                "0.858": 46
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-18.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.404,
+            "solve_time": 0.518,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-19.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.391,
+            "solve_time": 0.548,
+            "objectives": {
+                "0.459": 23,
+                "0.477": 30,
+                "0.546": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-25.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.44,
+            "solve_time": 0.902,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-31.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.472,
+            "solve_time": 1.361,
+            "objectives": {
+                "0.577": 37,
+                "0.606": 42,
+                "0.648": 46,
+                "1.083": 47,
+                "1.16": 54,
+                "1.192": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-27.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.431,
+            "solve_time": 0.526,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-33.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.39,
+            "solve_time": 0.455,
+            "objectives": {
+                "0.455": 14
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-32.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.391,
+            "solve_time": 0.588,
+            "objectives": {
+                "0.468": 40,
+                "0.545": 46,
+                "0.588": 47
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-26.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.447,
+            "solve_time": 0.568,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-03.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.43,
+            "solve_time": 0.568,
+            "objectives": {
+                "0.521": 46,
+                "0.539": 55,
+                "0.568": 57
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-17.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.391,
+            "solve_time": 0.479,
+            "objectives": {
+                "0.466": 19,
+                "0.477": 25
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-16.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.402,
+            "solve_time": 0.671,
+            "objectives": {
+                "0.473": 19,
+                "0.542": 37,
+                "0.598": 42,
+                "0.634": 44
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-02.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.476,
+            "solve_time": 1.164,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-28.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.414,
+            "solve_time": 0.571,
+            "objectives": {
+                "0.49": 29,
+                "0.529": 44
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-14.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.44,
+            "solve_time": 0.506,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-00.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.439,
+            "solve_time": 0.548,
+            "objectives": {
+                "0.516": 33,
+                "0.54": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-01.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.413,
+            "solve_time": 0.464,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-15.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.414,
+            "solve_time": 0.627,
+            "objectives": {
+                "0.626": 19
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-29.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.386,
+            "solve_time": 0.51,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-11.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.406,
+            "solve_time": 0.711,
+            "objectives": {
+                "0.684": 16
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-05.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.449,
+            "solve_time": 0.489,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-39.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.411,
+            "solve_time": 0.629,
+            "objectives": {
+                "0.613": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-38.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.392,
+            "solve_time": 0.543,
+            "objectives": {
+                "0.459": 22,
+                "0.473": 42,
+                "0.515": 43
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-04.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.408,
+            "solve_time": 0.472,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-10.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.408,
+            "solve_time": 0.566,
+            "objectives": {
+                "0.493": 29
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-06.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.388,
+            "solve_time": 0.451,
+            "objectives": {
+                "0.45": 25
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-12.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.437,
+            "solve_time": 0.662,
+            "objectives": {
+                "0.522": 26,
+                "0.551": 48,
+                "0.571": 53,
+                "0.637": 51,
+                "0.659": 54
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-13.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.414,
+            "solve_time": 0.466,
+            "objectives": {
+                "0.466": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-07.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.411,
+            "solve_time": 0.462,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-48.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.431,
+            "solve_time": 0.633,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-60.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.441,
+            "solve_time": 0.525,
+            "objectives": {
+                "0.524": 37
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-74.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.413,
+            "solve_time": 0.628,
+            "objectives": {
+                "0.624": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-75.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.44,
+            "solve_time": 0.839,
+            "objectives": {
+                "0.573": 30,
+                "0.612": 38
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-61.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.406,
+            "solve_time": 0.584,
+            "objectives": {
+                "0.514": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-49.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.424,
+            "solve_time": 0.778,
+            "objectives": {
+                "0.572": 44,
+                "0.665": 52
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-88.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.407,
+            "solve_time": 0.458,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-77.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.405,
+            "solve_time": 0.486,
+            "objectives": {
+                "0.485": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-63.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.412,
+            "solve_time": 0.594,
+            "objectives": {
+                "0.489": 15,
+                "0.506": 25,
+                "0.538": 33,
+                "0.561": 34
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-62.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.386,
+            "solve_time": 0.574,
+            "objectives": {
+                "0.453": 20,
+                "0.505": 36
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-76.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.409,
+            "solve_time": 0.519,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-89.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.462,
+            "solve_time": 1.492,
+            "objectives": {
+                "1.49": 43
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-99.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.407,
+            "solve_time": 0.652,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-72.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.424,
+            "solve_time": 0.464,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-66.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.4,
+            "solve_time": 0.694,
+            "objectives": {
+                "0.693": 22
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-67.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.471,
+            "solve_time": 0.892,
+            "objectives": {
+                "0.831": 50,
+                "0.863": 52,
+                "0.887": 53
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-73.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.429,
+            "solve_time": 0.838,
+            "objectives": {
+                "0.511": 28,
+                "0.572": 32,
+                "0.655": 35,
+                "0.729": 38,
+                "0.826": 39
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-98.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.433,
+            "solve_time": 0.956,
+            "objectives": {
+                "0.697": 41,
+                "0.716": 49,
+                "0.9": 51,
+                "0.94": 55
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-65.dzn",
+            "status": "UNSATISFIABLE",
+            "flat_time": 0.381,
+            "solve_time": 0.43,
+            "objectives": {}
+        },
+        {
+            "problem": "lopstr-2024/data/data-71.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.465,
+            "solve_time": 0.963,
+            "objectives": {
+                "0.843": 36,
+                "0.866": 45
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-59.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.388,
+            "solve_time": 0.722,
+            "objectives": {
+                "0.454": 26,
+                "0.473": 29,
+                "0.536": 35,
+                "0.638": 40
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-58.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.467,
+            "solve_time": 0.71,
+            "objectives": {
+                "0.672": 27
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-70.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.419,
+            "solve_time": 0.608,
+            "objectives": {
+                "0.496": 21,
+                "0.519": 28,
+                "0.55": 29,
+                "0.582": 30,
+                "0.6": 32
+            }
+        },
+        {
+            "problem": "lopstr-2024/data/data-64.dzn",
+            "status": "OPTIMAL_SOLUTION",
+            "flat_time": 0.44,
+            "solve_time": 0.734,
+            "objectives": {
+                "0.523": 37,
+                "0.6": 40,
+                "0.657": 49,
+                "0.693": 50
+            }
+        }
+    ]
+}
