@@ -119,18 +119,12 @@ if __name__ == '__main__':
                 )
                 for r in p.stdout.readlines()
             ]
-            json_rows = [j for j in json_rows if j["type"] != "comment"]
-            # ORTools has the last one different from the others
-            if solver_name != "cpsatlp":
-                json_rows = json_rows[:-1]
-                status = json_rows[-2]["status"]
-                solve_time = json_rows[-2]["time"] / 1000
-            else:
-                status = json_rows[-3]["status"]
-                solve_time = json_rows[-3]["time"] / 1000
+            json_first_statistics = [j for j in json_rows if j["type"] == "statistics"][0]
+            json_last_status = [j for j in json_rows if j["type"] == "status"][-1]
 
-            flat_time = json_rows[0]["statistics"]["flatTime"]
-
+            status = json_last_status["status"]
+            solve_time = json_last_status["time"] / 1000
+            flat_time = json_first_statistics["statistics"]["flatTime"]
             solutions = [r for r in json_rows if r["type"] == "solution"]
 
             if status == "UNSATISFIABLE":
