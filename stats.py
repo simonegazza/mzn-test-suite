@@ -39,8 +39,8 @@ if __name__ == '__main__':
         unsats = 0
         sats = 0
         optimization_time_sum = 0
-        min_optmization_time = None
-        min_optmization_time = None
+        min_optimization_time = None
+        max_optimization_time = None
         flat_time_sum = 0
         time_first_solution = 0
         time_last_solution = 0
@@ -54,8 +54,8 @@ if __name__ == '__main__':
                 optimization_time_sum += solution["solve_time"]
                 time_first_solution += min(sorted_time_objectives)
                 time_last_solution += max(sorted_time_objectives)
-                min_optmization_time = min(e for e in [min_optmization_time, solution["solve_time"]] if e is not None)
-                max_optmization_time = max(e for e in [min_optmization_time, solution["solve_time"]] if e is not None)
+                min_optimization_time = min(e for e in [min_optimization_time, solution["solve_time"]] if e is not None)
+                max_optimization_time = max(e for e in [max_optimization_time, solution["solve_time"]] if e is not None)
             elif solution["status"] == "UNSATISFIABLE":
                 unsats += 1
             elif solution["status"] == "SATISFIED":
@@ -78,8 +78,8 @@ if __name__ == '__main__':
                 "average_optimization_time" : format_float(
                     optimization_time_sum / optimals
                 ),
-                "min_optimization_time" : format_float(min_optmization_time),
-                "max_optimization_time" : format_float(max_optmization_time),
+                "min_optimization_time" : format_float(min_optimization_time),
+                "max_optimization_time" : format_float(max_optimization_time),
                 "average_flattening_time" : format_float(
                     flat_time_sum / len(solutions)
                 )
