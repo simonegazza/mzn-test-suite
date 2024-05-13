@@ -7,6 +7,8 @@
         "average_time_to_first_solution": "0.498",
         "average_time_to_last_solution": "0.536",
         "average_optimization_time": "0.557",
+        "min_optimization_time": "0.411",
+        "max_optimization_time": "0.610",
         "average_flattening_time": "0.354",
         "points": "173.350"
     },
@@ -18,6 +20,8 @@
         "average_time_to_first_solution": "0.888",
         "average_time_to_last_solution": "1.774",
         "average_optimization_time": "6.319",
+        "min_optimization_time": "0.755",
+        "max_optimization_time": "2.112",
         "average_flattening_time": "0.356",
         "points": "113.791"
     },
@@ -29,6 +33,8 @@
         "average_time_to_first_solution": "0.484",
         "average_time_to_last_solution": "0.614",
         "average_optimization_time": "0.781",
+        "min_optimization_time": "0.441",
+        "max_optimization_time": "0.774",
         "average_flattening_time": "0.347",
         "points": "163.886"
     },
@@ -40,6 +46,8 @@
         "average_time_to_first_solution": "0.579",
         "average_time_to_last_solution": "0.661",
         "average_optimization_time": "0.722",
+        "min_optimization_time": "0.451",
+        "max_optimization_time": "0.734",
         "average_flattening_time": "0.423",
         "points": "148.973"
     }
