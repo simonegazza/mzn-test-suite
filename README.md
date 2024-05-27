@@ -39,7 +39,7 @@ commented). It generates:
 ## Running tests
 You can run the test on your machine using the following command:
 ```bash
-./runner.py ./lopstr-2024/freeda-model.mzn ./lopstr-2024/data/ -l lopstr-2024/my-results.json --solvers gurobi gecode chuffed cplpsat #the last one is ortools
+./runner.py ./lopstr-2024/freeda-model.mzn ./lopstr-2024/data/ -l lopstr-2024/my-results.json --solvers gurobi gecode chuffed cpsatlp #the last one is ortools
 ```
 It uses the following arguments:
 - *./lopstr-2024/freeda-model.mzn* the path to the model

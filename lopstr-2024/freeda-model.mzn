@@ -84,7 +84,7 @@ constraint forall(i in CompFlavs)( D[i,0] = 0 );
 
 % Components that must be deployed
 constraint forall (c in mustComps) (
-  sum (i in Flav[c], j in Nodes)( D[i,j] ) > 0 /\ node[c] > 0
+  sum (i in Flav[c], j in Nodes)( D[I(c,i),j] ) > 0 /\ node[c] > 0
 );
 
 % Each component is deployed in at most one flavour, on at most one node
@@ -122,6 +122,7 @@ constraint forall(j in Nodes, r in Req_nr[j] where r in CRes) (
 );
 
 % Dependency requirements.
+% FIXME: Maybe add pre-condition D[I(c,i), node[c1]] = 1.
 constraint forall(c in Comps, i in Flav[c], c1 in Uses[I(c,i)], 
                                              r in Req_cc[c,c1]) (
   if worstBounds[r] = 0 then
