@@ -1,54 +1,54 @@
 {
-    "cpsatlp": {
+    "gurobi": {
         "optimals": 61,
         "unsats": 39,
         "sats": 0,
         "unkowns": 0,
-        "average_time_to_first_solution": "0.498",
-        "average_time_to_last_solution": "0.536",
-        "average_optimization_time": "0.557",
-        "min_optimization_time": "0.411",
-        "max_optimization_time": "0.774",
-        "average_flattening_time": "0.354",
-        "points": "173.350"
-    },
-    "chuffed": {
-        "optimals": 61,
-        "unsats": 39,
-        "sats": 0,
-        "unkowns": 0,
-        "average_time_to_first_solution": "0.888",
-        "average_time_to_last_solution": "1.774",
-        "average_optimization_time": "6.319",
-        "min_optimization_time": "0.755",
-        "max_optimization_time": "159.914",
-        "average_flattening_time": "0.356",
-        "points": "113.791"
+        "average_time_to_first_solution": "0.560",
+        "average_time_to_last_solution": "0.685",
+        "average_optimization_time": "0.752",
+        "min_optimization_time": "0.450",
+        "max_optimization_time": "2.082",
+        "average_flattening_time": "0.426",
+        "points": "149.755"
     },
     "gecode": {
         "optimals": 61,
         "unsats": 39,
         "sats": 0,
         "unkowns": 0,
-        "average_time_to_first_solution": "0.484",
-        "average_time_to_last_solution": "0.614",
-        "average_optimization_time": "0.781",
+        "average_time_to_first_solution": "0.481",
+        "average_time_to_last_solution": "0.633",
+        "average_optimization_time": "0.806",
         "min_optimization_time": "0.441",
-        "max_optimization_time": "5.792",
-        "average_flattening_time": "0.347",
-        "points": "163.886"
+        "max_optimization_time": "5.691",
+        "average_flattening_time": "0.345",
+        "points": "162.229"
     },
-    "gurobi": {
+    "chuffed": {
         "optimals": 61,
         "unsats": 39,
         "sats": 0,
         "unkowns": 0,
-        "average_time_to_first_solution": "0.579",
-        "average_time_to_last_solution": "0.661",
-        "average_optimization_time": "0.722",
-        "min_optimization_time": "0.451",
-        "max_optimization_time": "1.640",
-        "average_flattening_time": "0.423",
-        "points": "148.973"
+        "average_time_to_first_solution": "0.879",
+        "average_time_to_last_solution": "1.270",
+        "average_optimization_time": "8.810",
+        "min_optimization_time": "0.792",
+        "max_optimization_time": "226.340",
+        "average_flattening_time": "0.352",
+        "points": "114.021"
+    },
+    "cpsatlp": {
+        "optimals": 61,
+        "unsats": 39,
+        "sats": 0,
+        "unkowns": 0,
+        "average_time_to_first_solution": "0.501",
+        "average_time_to_last_solution": "0.548",
+        "average_optimization_time": "0.577",
+        "min_optimization_time": "0.420",
+        "max_optimization_time": "1.047",
+        "average_flattening_time": "0.346",
+        "points": "173.994"
     }
 }
