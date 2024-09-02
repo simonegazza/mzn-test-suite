@@ -142,7 +142,7 @@ if __name__ == '__main__':
                 try:
                     json_last_status = [j for j in json_rows if j["type"] == "status"][-1]
                 except:
-                    json_last_status = {"status" : "UNKNOWN", "time": timeout *  60}
+                    json_last_status = {"status" : "UNKNOWN", "time": timeout / 1000}
 
                 status = json_last_status["status"]
                 solve_time = json_last_status["time"] / 1000
