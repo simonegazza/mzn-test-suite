@@ -2,45 +2,47 @@
 
 import itertools
 import argparse
+from pathlib import Path
 
-def parse_args(raw_args=None):
-    parser = argparse.ArgumentParser(description="Job file generator")
-    parser.add_argument("amount", metavar="n", type=int, help="Generate n x n jobs")
-    parser.add_argument(
-        "--separator",
-        "-s",
-        type=str,
-        default="-",
-        help="Separator between component and node",
-    )
-    parser.add_argument(
-        "--output",
-        "-o",
-        type=str,
-        default=None,
-        help="Where to locate the job file",
-    )
-    args = parser.parse_args(raw_args)
+REPETITIONS_PER_TEST = [3]
+COMPONENTS = range(3, 50)
+FLAVOURS = [3]
+NODES = range(3, 50)
+RESOURCES = [5]
+COMPONENTS_GRAPH = ["barabasi_albert", "erdos_renyi", "path"]
+INFRASTRUCTURE_GRAPH = ["barabasi_albert", "erdos_renyi", "complete", "ladder", "wheel"]
 
-    return args
+combinations = itertools.product(
+    REPETITIONS_PER_TEST,
+    COMPONENTS,
+    FLAVOURS,
+    NODES,
+    RESOURCES,
+    COMPONENTS_GRAPH,
+    INFRASTRUCTURE_GRAPH
+)
 
-def main(raw_args=None):
-    args = parse_args(raw_args)
-    result = [
-        str(c) + args.separator + str(n)
-        for c, n in itertools.product(
-            range(1, args.amount + 1),
-            range(1, args.amount + 1))
-    ]
-
-    result = '\n'.join(result)
-
-    if args.output is None:
-        print(result)
-    else:
-        with open(args.output, "w") as f:
-            f.write(result)
+parser = argparse.ArgumentParser(description="Generate job file.")
+parser.add_argument("-p", "--prefix", type=str, help="Prefix location to output files", default="./")
+args = parser.parse_args()
 
 
-if __name__ == "__main__":
-    main()
+result = [
+    " ".join((
+        str(t),
+        "-c " + str(c),
+        "-f " + str(f),
+        "-n " + str(n),
+        "-r " + str(r),
+        "-g " + str(g),
+        "-i " + str(i),
+        "-o " + (
+            Path(args.prefix)
+            /
+            f"c{c}_f{f}_n{n}_r{r}_g{g.split('_')[0]}_i{i.split('_')[0]}"
+        )
+    ))
+    for t, c, f, n, r, g, i in combinations
+]
+
+print("\n".join(result))
