@@ -242,16 +242,17 @@ array[Nodes] of var 0..1: u;
 constraint forall(j in Nodes, c in Comps, i in Flav[c])(u[j] >= D[Idx(c, i), j]);
 constraint forall(j in Nodes)(u[j] <= sum(c in Comps, i in Flav[c])(D[Idx(c, i), j]));
 
-array[Nodes] of
-MIN_RBOUNDS*min(cost)
-..
-sum(r in Res, j in Nodes0)(nodeCap[j, r] * cost[j, r]):
-w = [
-  sum(r in Res)(nodeCap[j, r] * cost[j, r])
-  | j in Nodes
-];
+% array[Nodes] of
+% MIN_RBOUNDS*min(cost)
+% ..
+% sum(r in Res, j in Nodes0)(nodeCap[j, r] * cost[j, r]):
+% w = [
+%   sum(r in Res)(nodeCap[j, r] * cost[j, r])
+%   | j in Nodes
+% ];
 
-var int: obj = sum(j in Nodes)(w[j]*u[j]);
+% var int: obj = sum(j in Nodes)(w[j]*u[j]);
+var int: obj = sum(j in Nodes, r in Res)(cost[j, r]*u[j]);
 
 solve minimize obj;
 

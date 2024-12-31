@@ -4,13 +4,13 @@ import itertools
 import argparse
 from pathlib import Path
 
-REPETITIONS_PER_TEST = [5]
-COMPONENTS = range(4, 15)
+REPETITIONS_PER_TEST = [3]
+COMPONENTS = range(4, 33)
 #FLAVOURS = [1]
-NODES = range(3, 15)
+NODES = range(3, 33)
 #RESOURCES = [1]
 COMPONENTS_GRAPH = ["barabasi_albert", "erdos_renyi", "path"]
-INFRASTRUCTURE_GRAPH = ["barabasi_albert", "erdos_renyi", "complete", "ladder", "wheel"]
+INFRASTRUCTURE_GRAPH = ["complete"]
 
 combinations = itertools.product(
     REPETITIONS_PER_TEST,
