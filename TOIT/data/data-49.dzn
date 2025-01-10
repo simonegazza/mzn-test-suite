@@ -1,0 +1,119 @@
+Comps = {frontend0, frontend1, backend0, backend1, database0, database1};
+mustComps = {frontend0, frontend1};
+Flavs = {tiny, medium, large};
+Nodes = {n1, n2, n3, n4};
+CRes = {CPU, RAM, storage, bwIn, bwOut};
+NRes = {ssl, fwall, encr, avail, latency};
+Flav = [{medium, large}, {medium, large}, {tiny, medium, large}, {tiny, medium, large}, {large}, {large}];
+Uses = array2d(CompFlavs, CompFlavs, [
+	0,0,0,0,1,0,0,0,0,0,0,0,
+	0,0,0,0,1,0,0,0,0,0,0,0,
+	0,0,0,0,1,0,0,0,0,0,0,0,
+	0,0,0,0,1,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,1,0,0,0,0,0,
+	0,0,0,0,0,0,1,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,1,0,0,0,0,0,
+	0,0,0,0,0,0,1,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,
+]);
+mayUse = array2d(Comps, CompFlavs, [
+	0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,
+	1,1,1,1,0,1,1,0,1,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,
+]);
+MIN_RBOUNDS = 0;
+MAX_RBOUNDS = 1000000;
+
+worstBounds = [0, 0, 0, 0, 0, 0, 0, 0, 0, MAX_RBOUNDS];
+bestBounds = [MAX_RBOUNDS - i | i in worstBounds];
+
+comReq = array2d(CompFlavs, Res, [
+  4, 481, 225, 493, 373, 0, 1, 1, 96, MAX_RBOUNDS,
+  2, 203, 433, 586, 759, 0, 0, 1, 95, MAX_RBOUNDS,
+  2, 377, 231, 833, 683, 0, 0, 1, 96, MAX_RBOUNDS,
+  2, 202, 252, 205, 857, 1, 1, 1, 96, MAX_RBOUNDS,
+  2, 351, 341, 729, 686, 1, 0, 0, 95, MAX_RBOUNDS,
+  8, 280, 249, 810, 325, 1, 1, 0, 97, MAX_RBOUNDS,
+  2, 225, 220, 830, 990, 1, 1, 0, 95, MAX_RBOUNDS,
+  2, 273, 444, 544, 464, 1, 0, 1, 95, MAX_RBOUNDS,
+  2, 211, 496, 271, 805, 1, 0, 1, 95, MAX_RBOUNDS,
+  2, 336, 452, 301, 393, 1, 0, 0, 97, MAX_RBOUNDS,
+  2, 430, 432, 504, 762, 1, 0, 0, 95, MAX_RBOUNDS,
+  2, 257, 328, 521, 979, 1, 1, 0, 95, MAX_RBOUNDS,
+]);
+
+nodeCap = array2d(Nodes0, Res, [bestBounds[r] | r in Res] ++ [
+  16, 104453, 648321, 12233, 14806, 1, 1, 1, 99, 0,
+  8, 86567, 149533, 14940, 10232, 1, 1, 1, 98, 0,
+  16, 95670, 352218, 13343, 22399, 1, 1, 1, 99, 0,
+  16, 70526, 253874, 19797, 23507, 1, 1, 1, 99, 0,
+]);
+
+cost = array2d(Nodes0, Res, [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, % no node
+  19, 9, 17, 0, 0, 0, 0, 0, 0, 0,
+  10, 10, 25, 0, 0, 0, 0, 0, 0, 0,
+  11, 8, 15, 0, 0, 0, 0, 0, 0, 0,
+  13, 7, 18, 0, 0, 0, 0, 0, 0, 0,
+]);
+
+carb = array2d(Nodes0, Res, [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, % no node
+  1, 14, 31, 0, 0, 0, 0, 0, 0, 0,
+  13, 17, 37, 0, 0, 0, 0, 0, 0, 0,
+  24, 42, 5, 0, 0, 0, 0, 0, 0, 0,
+  12, 22, 4, 0, 0, 0, 0, 0, 0, 0,
+]);
+
+costBudget = 32832;
+carbBudget = 37743;
+
+depReq = array4d(Comps, Flavs, Comps, Res, [
+  if c1 = frontend0 /\ c2 = backend0 /\ r = N(avail) then
+    96
+  elseif c1 = frontend0 /\ c2 = backend1 /\ r = N(avail) then
+    96
+  elseif c1 = frontend1 /\ c2 = backend1 /\ r = N(avail) then
+    97
+  elseif c1 = frontend1 /\ c2 = backend0 /\ r = N(avail) then
+    95
+  else
+    worstBounds[r]
+  endif | c1 in Comps, i in Flavs, c2 in Comps, r in Res]);
+
+linkCap = array3d(Nodes0, Nodes0, Res, [
+  if ni = 0 \/ nj = 0 then
+    bestBounds[r]
+  elseif ni = nj /\ r = N(avail) then
+    nodeCap[ni,r]
+  elseif {ni, nj} = {n1, n2} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n2, n4} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n1, n4} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n2, n3} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n1, n3} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n3, n4} /\ r = N(avail) then
+    99
+  else
+    worstBounds[r]
+  endif | ni in Nodes0, nj in Nodes0, r in Res]);
+
+imp = array2d(Comps, Flavs, [
+  2, 7, 9,
+  3, 6, 7,
+  1, 2, 8,
+  1, 5, 9,
+  2, 3, 5,
+  4, 6, 8,
+]);
+

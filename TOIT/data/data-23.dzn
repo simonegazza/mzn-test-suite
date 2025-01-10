@@ -1,0 +1,131 @@
+Comps = {frontend0, frontend1, backend0, backend1, backend2, database0, database1};
+mustComps = {frontend0, frontend1};
+Flavs = {tiny, medium, large};
+Nodes = {n1, n2, n3, n4};
+CRes = {CPU, RAM, storage, bwIn, bwOut};
+NRes = {ssl, fwall, encr, avail, latency};
+Flav = [{medium, large}, {medium, large}, {tiny, medium, large}, {tiny, medium, large}, {tiny, medium, large}, {large}, {large}];
+Uses = array2d(CompFlavs, CompFlavs, [
+	0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,
+	0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+]);
+mayUse = array2d(Comps, CompFlavs, [
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+	1,1,0,0,0,1,1,0,1,1,0,1,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+]);
+MIN_RBOUNDS = 0;
+MAX_RBOUNDS = 1000000;
+
+worstBounds = [0, 0, 0, 0, 0, 0, 0, 0, 0, MAX_RBOUNDS];
+bestBounds = [MAX_RBOUNDS - i | i in worstBounds];
+
+comReq = array2d(CompFlavs, Res, [
+  2, 332, 345, 448, 477, 0, 1, 0, 95, MAX_RBOUNDS,
+  2, 343, 261, 565, 549, 1, 1, 1, 95, MAX_RBOUNDS,
+  2, 276, 389, 503, 271, 0, 0, 0, 96, MAX_RBOUNDS,
+  2, 438, 205, 370, 217, 1, 0, 0, 95, MAX_RBOUNDS,
+  2, 311, 234, 216, 683, 1, 1, 1, 95, MAX_RBOUNDS,
+  8, 354, 292, 730, 425, 1, 1, 1, 95, MAX_RBOUNDS,
+  2, 471, 244, 922, 942, 0, 1, 1, 97, MAX_RBOUNDS,
+  2, 488, 332, 691, 431, 1, 0, 1, 95, MAX_RBOUNDS,
+  4, 497, 414, 796, 327, 0, 0, 0, 95, MAX_RBOUNDS,
+  2, 449, 286, 818, 346, 1, 1, 0, 97, MAX_RBOUNDS,
+  2, 312, 233, 765, 288, 0, 1, 0, 96, MAX_RBOUNDS,
+  2, 231, 386, 670, 870, 0, 0, 1, 95, MAX_RBOUNDS,
+  2, 321, 268, 652, 214, 1, 1, 1, 96, MAX_RBOUNDS,
+  4, 440, 430, 846, 247, 1, 1, 0, 95, MAX_RBOUNDS,
+  8, 207, 329, 650, 694, 1, 1, 1, 95, MAX_RBOUNDS,
+]);
+
+nodeCap = array2d(Nodes0, Res, [bestBounds[r] | r in Res] ++ [
+  16, 90699, 285175, 11475, 19017, 1, 0, 1, 99, 0,
+  8, 105831, 207879, 19503, 24208, 0, 1, 1, 99, 0,
+  8, 76941, 219346, 19604, 13669, 1, 1, 1, 99, 0,
+  16, 125574, 382648, 10869, 16749, 1, 1, 0, 99, 0,
+]);
+
+cost = array2d(Nodes0, Res, [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, % no node
+  13, 9, 19, 0, 0, 0, 0, 0, 0, 0,
+  20, 7, 15, 0, 0, 0, 0, 0, 0, 0,
+  16, 8, 19, 0, 0, 0, 0, 0, 0, 0,
+  12, 5, 17, 0, 0, 0, 0, 0, 0, 0,
+]);
+
+carb = array2d(Nodes0, Res, [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, % no node
+  32, 11, 18, 0, 0, 0, 0, 0, 0, 0,
+  6, 7, 42, 0, 0, 0, 0, 0, 0, 0,
+  16, 1, 41, 0, 0, 0, 0, 0, 0, 0,
+  34, 34, 24, 0, 0, 0, 0, 0, 0, 0,
+]);
+
+costBudget = 62633;
+carbBudget = 67660;
+
+depReq = array4d(Comps, Flavs, Comps, Res, [
+  if c1 = frontend0 /\ c2 = backend0 /\ r = N(avail) then
+    95
+  elseif c1 = frontend1 /\ c2 = backend2 /\ r = N(avail) then
+    96
+  elseif c1 = frontend1 /\ c2 = backend1 /\ r = N(avail) then
+    95
+  elseif c1 = frontend0 /\ c2 = backend1 /\ r = N(avail) then
+    95
+  elseif c1 = frontend1 /\ c2 = backend0 /\ r = N(avail) then
+    96
+  elseif c1 = frontend0 /\ c2 = backend2 /\ r = N(avail) then
+    96
+  else
+    worstBounds[r]
+  endif | c1 in Comps, i in Flavs, c2 in Comps, r in Res]);
+
+linkCap = array3d(Nodes0, Nodes0, Res, [
+  if ni = 0 \/ nj = 0 then
+    bestBounds[r]
+  elseif ni = nj /\ r = N(avail) then
+    nodeCap[ni,r]
+  elseif {ni, nj} = {n1, n2} /\ r = N(avail) then
+    99
+  elseif {ni, nj} = {n2, n4} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n1, n4} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n2, n3} /\ r = N(avail) then
+    99
+  elseif {ni, nj} = {n1, n3} /\ r = N(avail) then
+    99
+  elseif {ni, nj} = {n3, n4} /\ r = N(avail) then
+    98
+  else
+    worstBounds[r]
+  endif | ni in Nodes0, nj in Nodes0, r in Res]);
+
+imp = array2d(Comps, Flavs, [
+  1, 7, 8,
+  1, 5, 7,
+  3, 6, 9,
+  1, 4, 5,
+  1, 3, 8,
+  1, 7, 9,
+  1, 7, 8,
+]);
+

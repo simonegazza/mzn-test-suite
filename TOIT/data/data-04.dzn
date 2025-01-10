@@ -1,0 +1,129 @@
+Comps = {frontend0, frontend1, frontend2, backend0, backend1, database0, database1};
+mustComps = {frontend0, frontend1, frontend2};
+Flavs = {tiny, medium, large};
+Nodes = {n1, n2, n3, n4};
+CRes = {CPU, RAM, storage, bwIn, bwOut};
+NRes = {ssl, fwall, encr, avail, latency};
+Flav = [{medium, large}, {medium, large}, {medium, large}, {tiny, medium, large}, {tiny, medium, large}, {large}, {large}];
+Uses = array2d(CompFlavs, CompFlavs, [
+	0,0,0,0,0,0,1,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,1,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,1,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,1,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,1,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,1,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,1,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,1,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+]);
+mayUse = array2d(Comps, CompFlavs, [
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	1,1,1,1,0,0,0,1,1,0,0,0,0,0,
+	0,0,0,0,1,1,0,0,0,0,1,1,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+]);
+MIN_RBOUNDS = 0;
+MAX_RBOUNDS = 1000000;
+
+worstBounds = [0, 0, 0, 0, 0, 0, 0, 0, 0, MAX_RBOUNDS];
+bestBounds = [MAX_RBOUNDS - i | i in worstBounds];
+
+comReq = array2d(CompFlavs, Res, [
+  2, 292, 277, 402, 693, 0, 1, 1, 95, MAX_RBOUNDS,
+  2, 434, 405, 521, 292, 0, 1, 1, 95, MAX_RBOUNDS,
+  4, 247, 279, 756, 814, 0, 0, 1, 95, MAX_RBOUNDS,
+  2, 329, 318, 519, 749, 1, 0, 1, 96, MAX_RBOUNDS,
+  8, 331, 403, 994, 568, 0, 0, 0, 97, MAX_RBOUNDS,
+  2, 343, 412, 993, 329, 0, 1, 1, 96, MAX_RBOUNDS,
+  2, 248, 490, 703, 959, 1, 1, 1, 96, MAX_RBOUNDS,
+  2, 497, 483, 215, 562, 0, 1, 1, 97, MAX_RBOUNDS,
+  4, 499, 247, 445, 252, 0, 0, 0, 96, MAX_RBOUNDS,
+  2, 407, 369, 771, 907, 1, 1, 1, 97, MAX_RBOUNDS,
+  8, 304, 390, 504, 981, 0, 1, 0, 95, MAX_RBOUNDS,
+  4, 298, 400, 602, 546, 1, 0, 1, 96, MAX_RBOUNDS,
+  2, 369, 392, 572, 270, 1, 1, 0, 95, MAX_RBOUNDS,
+  2, 458, 389, 779, 349, 0, 1, 1, 96, MAX_RBOUNDS,
+]);
+
+nodeCap = array2d(Nodes0, Res, [bestBounds[r] | r in Res] ++ [
+  32, 127495, 249276, 12794, 13908, 1, 0, 1, 98, 0,
+  32, 73938, 389359, 14445, 12488, 1, 0, 1, 98, 0,
+  32, 45036, 974524, 24731, 24926, 1, 1, 1, 98, 0,
+  16, 43097, 284944, 23961, 19885, 1, 1, 1, 99, 0,
+]);
+
+cost = array2d(Nodes0, Res, [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, % no node
+  16, 9, 17, 0, 0, 0, 0, 0, 0, 0,
+  20, 10, 22, 0, 0, 0, 0, 0, 0, 0,
+  11, 7, 20, 0, 0, 0, 0, 0, 0, 0,
+  11, 10, 18, 0, 0, 0, 0, 0, 0, 0,
+]);
+
+carb = array2d(Nodes0, Res, [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, % no node
+  10, 33, 18, 0, 0, 0, 0, 0, 0, 0,
+  19, 47, 27, 0, 0, 0, 0, 0, 0, 0,
+  48, 4, 23, 0, 0, 0, 0, 0, 0, 0,
+  18, 10, 40, 0, 0, 0, 0, 0, 0, 0,
+]);
+
+costBudget = 62791;
+carbBudget = 61642;
+
+depReq = array4d(Comps, Flavs, Comps, Res, [
+  if c1 = frontend2 /\ c2 = backend0 /\ r = N(avail) then
+    96
+  elseif c1 = frontend0 /\ c2 = backend0 /\ r = N(avail) then
+    95
+  elseif c1 = frontend2 /\ c2 = backend1 /\ r = N(avail) then
+    97
+  elseif c1 = frontend1 /\ c2 = backend1 /\ r = N(avail) then
+    96
+  elseif c1 = frontend0 /\ c2 = backend1 /\ r = N(avail) then
+    97
+  elseif c1 = frontend1 /\ c2 = backend0 /\ r = N(avail) then
+    97
+  else
+    worstBounds[r]
+  endif | c1 in Comps, i in Flavs, c2 in Comps, r in Res]);
+
+linkCap = array3d(Nodes0, Nodes0, Res, [
+  if ni = 0 \/ nj = 0 then
+    bestBounds[r]
+  elseif ni = nj /\ r = N(avail) then
+    nodeCap[ni,r]
+  elseif {ni, nj} = {n1, n2} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n2, n4} /\ r = N(avail) then
+    99
+  elseif {ni, nj} = {n1, n4} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n2, n3} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n1, n3} /\ r = N(avail) then
+    98
+  elseif {ni, nj} = {n3, n4} /\ r = N(avail) then
+    98
+  else
+    worstBounds[r]
+  endif | ni in Nodes0, nj in Nodes0, r in Res]);
+
+imp = array2d(Comps, Flavs, [
+  1, 8, 9,
+  3, 6, 8,
+  2, 5, 6,
+  1, 3, 7,
+  1, 3, 5,
+  1, 5, 8,
+  1, 4, 8,
+]);
+
