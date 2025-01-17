@@ -36,7 +36,7 @@ result = [
         "-r " + str(r),
         "-g " + str(g),
         "-i " + str(i),
-        "-o " + (
+        "-o " + str(
             Path(args.prefix)
             /
             f"c{c}_f{f}_n{n}_r{r}_g{g.split('_')[0]}_i{i.split('_')[0]}"
