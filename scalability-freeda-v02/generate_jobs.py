@@ -5,9 +5,9 @@ import argparse
 from pathlib import Path
 
 REPETITIONS_PER_TEST = [3]
-COMPONENTS = range(3, 50)
+COMPONENTS = range(4, 41, 4)
 FLAVOURS = [3]
-NODES = range(3, 50)
+NODES = range(4, 41, 4)
 RESOURCES = [5]
 COMPONENTS_GRAPH = ["barabasi_albert", "erdos_renyi", "path"]
 INFRASTRUCTURE_GRAPH = ["barabasi_albert", "erdos_renyi", "complete", "ladder", "wheel"]
