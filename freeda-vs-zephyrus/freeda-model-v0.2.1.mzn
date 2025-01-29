@@ -55,7 +55,7 @@ array[CompFlavs] of set of Res: Req_cf = [
 
 % Req_cfc[c,f,c'] is the set of resources required by the connection between
 % "source" component c, deployed in flavour f, and "target" component c′.
-array[Comps, Flavs, Comps] of set of Res: Req_cfc = array3d(Comps, Flavs, Comps, 
+array[Comps, Flavs, Comps] of set of Res: Req_cfc = array3d(Comps, Flavs, Comps,
   [{r | r in Res where depReq[c1, i, c2, r] != worstBounds[r]}
   | c1 in Comps, i in Flavs, c2 in Comps
   ]);
@@ -71,7 +71,7 @@ array[Res] of MIN_RBOUNDS..MAX_RBOUNDS: worstBounds;
 
 % comReq[Idx(c,f), r] defines the amount of resource r in Req_cf[Idx(c,f)]
 % required by c to be executed in flavour f: if worstBounds[r] = MIN_RBOUNDS,
-% then c requires at least comReq[Idx(c,f), r] units of r; otherwise, it 
+% then c requires at least comReq[Idx(c,f), r] units of r; otherwise, it
 % requires at most comReq[Idx(c,f), r] units of r.
 array[CompFlavs, Res] of int: comReq;
 
@@ -86,7 +86,7 @@ array[Comps, Flavs, Comps, Res] of int: depReq;
 
 % All the nodes of the infrastructure.
 enum Nodes;
-% Node 0 is a dummy node added for convenience, to better handle the 
+% Node 0 is a dummy node added for convenience, to better handle the
 % constraints below. No component can be deployed on node 0.
 set of int: Nodes0 = {0} union Nodes;
 
@@ -98,7 +98,7 @@ array[Nodes] of set of Res: Req_n = [
 % nodeCap[n,r] is maximum amount of resource r available at node n.
 array[Nodes0, Res] of int: nodeCap;
 % If n = 0, it must be nodeCap[n,r] = bestBounds[r].
-constraint assert (forall(r in Res)(nodeCap[0,r] = bestBounds[r]), 
+constraint assert (forall(r in Res)(nodeCap[0,r] = bestBounds[r]),
   "Assertion nodeCap[0,r] = bestBounds[r] failed.", true);
 
 % linkCap[n, n', r] is the maximum amount of r that the link between n and n′
@@ -112,7 +112,7 @@ constraint assert (forall(n in Nodes, r in Res)(
 % cost[n,r] is the unit cost of using resource r node n.
 array[Nodes0, Res] of int: cost;
 % It must be cost[0,r] = 0.
-constraint assert (forall(r in Res)(cost[0,r] = 0), 
+constraint assert (forall(r in Res)(cost[0,r] = 0),
   "Assertion cost[0,r] = 0 failed.", true);
 % Money budget.
 int: costBudget;
@@ -120,7 +120,7 @@ int: costBudget;
 % carb[n,r] is the carbon emission per unit of resource r node n.
 array[Nodes0, Res] of int: carb;
 % It must be carb[0,r] = 0.
-constraint assert (forall(r in Res)(carb[0,r] = 0), 
+constraint assert (forall(r in Res)(carb[0,r] = 0),
   "Assertion carb[0,r] = 0 failed.", true);
 % Carbon budget.
 int: carbBudget;
@@ -175,14 +175,14 @@ constraint forall(
   cu in Comps,
   iu in Flav[cu] where Uses[Idx(c, i), Idx(cu, iu)] = 1
 )(
-  sum(j in Nodes)(D[Idx(c, i), j]) <= 
+  sum(j in Nodes)(D[Idx(c, i), j]) <=
   sum(k in Flav[cu], j in Nodes where imp[cu,k] >= imp[cu,iu])(D[Idx(cu, k),j])
 );
 
 % If a "target" component c not in mustComps is deployed, at least one "source"
 % component c' must be deployed in a flavour f requiring c.
 constraint forall(c in Comps diff mustComps)(
-  sum(i in Flav[c], j in Nodes)(D[Idx(c, i), j]) <= 
+  sum(i in Flav[c], j in Nodes)(D[Idx(c, i), j]) <=
   sum(cs in Comps where c != cs,
       is in Flav[cs] where mayUse[c, Idx(cs, is)] = 1, j in Nodes)
       ( D[Idx(cs, is), j] )
@@ -190,7 +190,7 @@ constraint forall(c in Comps diff mustComps)(
 
 % Each node j has a sufficient quantity of a certain resource r to meet the
 % demands of all the components deployed on it.
-constraint forall(j in Nodes, r in Req_n[j] where r in CRes) (
+constraint forall(j in Nodes, r in Req_n[j] where r in C(CRes)) (
   if worstBounds[r] = MIN_RBOUNDS then
     sum(c in Comps, i in Flav[c] where r in Req_cf[Idx(c,i)])
       (comReq[Idx(c,i), r] * D[Idx(c,i), j]) <= nodeCap[j,r]
@@ -202,7 +202,10 @@ constraint forall(j in Nodes, r in Req_n[j] where r in CRes) (
 
 % If component c deployed in flavour i requires a certain amount of resource r,
 % then node c must have capacity for r
-constraint forall(c in Comps, i in Flav[c], r in Req_cf[Idx(c,i)])(
+constraint forall(
+  c in Comps, i in Flav[c],
+  r in Req_cf[Idx(c,i)] where r in N(NRes)
+)(
   if worstBounds[r] = MIN_RBOUNDS then
     comReq[Idx(c,i), r] * D[Idx(c,i), node[c]] <= nodeCap[node[c], r]
   else
@@ -212,14 +215,20 @@ constraint forall(c in Comps, i in Flav[c], r in Req_cf[Idx(c,i)])(
 
 % Dependency from c to c' must be fulfilled only if there is an active
 % dependency between c and c'.
+% FIXME: so far, only defined on non-consumable resources.
 constraint forall(
   cd in Comps,
   cs in Comps,
   is in Flav[cs],
-  r in Req_cfc[cs, is, cd] where r in NRes
+  r in Req_cfc[cs, is, cd] where r in N(NRes)
 )(
-  depReq[cs, is, cd, r] * sum(j in Nodes)(D[Idx(cs, is), j]) <= 
-  linkCap[node[cs], node[cd], r]
+  if worstBounds[r] = MIN_RBOUNDS then
+    depReq[cs, is, cd, r] * sum(j in Nodes)(D[Idx(cs, is), j]) <=
+    linkCap[node[cs], node[cd], r]
+  else
+    depReq[cs, is, cd, r] * sum(j in Nodes)(D[Idx(cs, is), j]) >=
+    linkCap[node[cs], node[cd], r]
+  endif
 );
 
 % Budget requirements.
@@ -256,23 +265,76 @@ var int: obj = sum(j in Nodes, r in Res)(cost[j, r]*u[j]);
 
 solve minimize obj;
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Output formatting %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 output [
-  let {
-    var int: deployed_amount = sum(c in Comps)(node[c] = n),
-    set of int: amount = 1..fix(deployed_amount),
-    array[amount] of Comps: deployed = [c | c in Comps where fix(node[c]) = n],
-    array[amount] of Flavs: flav_deployed = [f | c in deployed, f in Flav[c] where fix(D[Idx(c, f), n]) = 1]
-  } in
-  concat(
-    ["\(n): \n"] ++ [
-      " - [\(cd), \([f | f in Flav[cd], fd in flav_deployed where D[Idx(cd, fd), n] = 1][1])]\n"
-      | cd in deployed
-    ]
-  )
-  | n in Nodes
+  if fix(node[c]) > 0 then
+    "Component \(c) deployed in flavour \([Flavs[i] | i in Flav[c] where
+    D[Idx(c,i),node[c]] > 0][1]) on node \(Nodes[node[c]]).\n"
+  else
+    "Component \(c) not deployed.\n"
+  endif
+  | c in Comps
+] ++ [
+  "Objective value: \(obj)\n\tTotal cost: \(totCost)\n\tTotal carb: \(totCarb)"
 ];
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Commented constraints %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% These constraints are commented out because currently they do not seem to
+% improve the solving process
+
+% constraint forall(r in Res, j in Nodes0 where r in CRes)(
+%   knapsack(
+%     [comReq[cf, r] | cf in CompFlavs],
+%     [cost[j, r] * comReq[cf, r] | cf in CompFlavs],
+%     [D[cf, j] | cf in CompFlavs],
+%     sum(cf in CompFlavs)(comReq[cf, r] * D[cf, j]),
+%     sum(cf in CompFlavs)(cost[j, r] * comReq[cf, r] * D[cf, j])
+%   )
+% );
+
+% constraint forall(r in Res, j in Nodes0 where r in CRes)(
+%   knapsack(
+%     [comReq[cf, r] | cf in CompFlavs],
+%     [carb[j, r] * comReq[cf, r] | cf in CompFlavs],
+%     [D[cf, j] | cf in CompFlavs],
+%     sum(cf in CompFlavs)(comReq[cf, r] * D[cf, j]),
+%     sum(cf in CompFlavs)(carb[j, r] * comReq[cf, r] * D[cf, j])
+%   )
+% );
+
+% array[Comps, Flavs] of set of Comps: delta = array2d(Comps, Flavs, [
+%   let {
+%     set of Comps : used = {c2 | c2 in Comps, f2 in Flav[c2] where Uses[Idx(c1, f1), Idx(c2, f2)] = 1 /\ f1 in Flav[c1]}
+%    } in if card(used) = 0 then {c1} else used endif
+%   | c1 in Comps, f1 in Flavs
+% ]);
+
+% var set of Flavs: flavour_deployed = {
+%   i | c in Comps, i in Flav[c] where D[Idx(c,i), node[c]] > 0
+% };
+
+% int: max_deployed_comps = card(Comps);
+% var 1..max_deployed_comps: deployed_comps = sum(
+%   c in Comps, f in Flav[c] where D[Idx(c, f), node[c]] > 0
+% )(D[Idx(c, f), node[c]]);
+
+% array[1..max_deployed_comps] of var Flavs: deployed;
+% constraint forall(i in deployed_comps+1..max_deployed_comps)(deployed[i] = deployed[deployed_comps]);
+
+% constraint forall(i in 1..deployed_comps)(deployed[i] in  flavour_deployed);
+
+% constraint forall(m in mustComps)(
+%   regular_nfa(
+%     deployed,
+%     card(Comps),
+%     card(Flavs),
+%     delta,
+%     m,
+%     {c | c in Comps where exists(f in Flav[c])(delta[c, f] = {c})}
+%   )
+% );
