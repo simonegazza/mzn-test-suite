@@ -16,11 +16,18 @@ SOLVERS = [
     "gurobi",
     "scip",
     "xpress",
-    "highs" # apparently this is bugged
+    "highs" # experimental solver
 ]
 
 def format_float(number):
     return float("{:.3f}".format(number))
+
+def print_to_file(data_file_name, solver_name, what):
+    dzn_file_path = Path(data_file_name).absolute()
+    dzn_name = str(os.path.basename(dzn_file_path))[:-4]
+    output_file_name = dzn_file_path.parent / (dzn_name + "-" + solver_name + "-json.log")
+    with open(output_file_name, "a") as f:
+        f.write(what)
 
 def make_parseargs():
     parser = argparse.ArgumentParser(
@@ -118,13 +125,12 @@ if __name__ == '__main__':
                     "Failure while running", dzn_file_path, "for solver", solver_name,
                     file=sys.stderr
                 )
+                processes[solver_name] += [{"data_file": dzn, "process": process_output}]
                 continue
 
     results = {solver_name : [] for solver_name in processes.keys()}
     infs = re.compile("inf|-inf")
     for solver_name in processes.keys():
-        total_unsats = 0
-        total_unknowns = 0
         for process_description in processes[solver_name]:
             try:
                 # The output of MiniZinc is sometimes a mess, clean it
@@ -137,27 +143,43 @@ if __name__ == '__main__':
                     infs.sub(lambda x: '"inf"' if x.group(0) == "inf" else '"-inf"', x)
                     for x in fixed_results
                 ]
+
                 json_rows = [json.loads(x) for x in fixed_results]
-                json_first_statistics = [j for j in json_rows if j["type"] == "statistics"][0]
-                try:
-                    json_last_status = [j for j in json_rows if j["type"] == "status"][-1]
-                except:
-                    json_last_status = {"status" : "UNKNOWN", "time": timeout / 1000}
+                [print(json.dumps(x)) for x in json_rows]
+                print()
+                print()
 
-                status = json_last_status["status"]
-                solve_time = json_last_status["time"] / 1000
-                flat_time = json_first_statistics["statistics"]["flatTime"]
+                json_statistics = [j for j in json_rows if j["type"] == "statistics"]
+                if len(json_statistics) == 0: # Compilation error
+                    error_row = json_rows[-1]
+                    results[solver_name] += [{
+                        "problem" : str(process_description["data_file"]),
+                        "status" : "COMPILATION_ERROR",
+                        "what": error_row["what"],
+                        "message" : error_row["message"]
+                    }]
+                    continue
+
+                json_statistics = [j for j in json_rows if j["type"] == "statistics"]
+                flat_time = json_statistics[0]["statistics"]["flatTime"]
+
                 solutions = [r for r in json_rows if r["type"] == "solution"]
-
                 objectives = {
                     format_float(s["time"] / 1000) : s["output"]["json"]["_objective"]
                     for s in solutions
                 }
 
-                if status == "UNSATISFIABLE":
-                    total_unsats += 1
-                if status == "UNKNOWN":
-                    total_unknowns += 1
+                try:
+                    json_last_status = [j for j in json_rows if j["type"] == "status"][-1]
+                    status = json_last_status["status"]
+                    solve_time = json_last_status["time"] / 1000
+                except:
+                    status = "SATISFIABLE" if len(objectives) != 0 else "UNKNOWN"
+                    json_stat = [j for j in json_statistics if "solveTime" in j["statistics"]][-1]
+                    solve_time = json_stat["statistics"]["solveTime"]
+
+                if len([j for j in json_rows if j["type"] == "error"]) > 0:
+                    print_to_file(process_description["data_file"], solver_name, process_output)
 
                 results[solver_name] += [{
                     "problem" : str(process_description["data_file"]),
@@ -167,6 +189,8 @@ if __name__ == '__main__':
                     "objectives" : objectives
                 }]
             except Exception as e:
+                # Something went very wrong during json readings. So wring that
+                # my failure recover above did not worked
                 print(
                     "Error while processing",
                     process_description["data_file"],
@@ -177,16 +201,8 @@ if __name__ == '__main__':
                 print(traceback.print_exc(), file=sys.stderr)
 
                 # Save failed result into a file to later use
-                dzn_file_path = Path(process_description["data_file"]).absolute()
-                dzn_name = str(os.path.basename(dzn_file_path))[:-4]
-                output_file_name = dzn_file_path.parent / (dzn_name + "-" + solver_name + "-json.log")
-                with open(output_file_name, "w") as f:
-                    f.write(process_output)
+                print_to_file(process_description["data_file"], solver_name, process_output)
                 continue
-
-        for name, ratio in zip(("unsat", "unkown"), (total_unsats, total_unknowns)):
-            r = format_float(ratio / len(processes[solver_name]))
-            print(name, "ratio for", solver_name, ":", r, "\n")
 
     # Be sure to save a into a file, even if a folder is set
     statistics_location = Path(args.statistics_location)
