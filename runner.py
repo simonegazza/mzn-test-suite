@@ -93,6 +93,7 @@ if __name__ == '__main__':
             dzn_file_path = Path(dzn).absolute()
             command = [
                 "minizinc",
+                "--compiler-statistics",
                 "-f", "-s", "-a", #-f = free search, -s = statistics, -a = all (even intermediate) solutions
                 "-d", dzn_file_path,
                 "--output-mode", "json", # This gives the object value under {}.json._objective
@@ -158,7 +159,15 @@ if __name__ == '__main__':
                     continue
 
                 json_statistics = [j for j in json_rows if j["type"] == "statistics"]
-                flat_time = json_statistics[0]["statistics"]["flatTime"]
+                json_compilation_statistics = json_statistics[0]
+                flat_time = json_compilation_statistics["statistics"]["flatTime"]
+
+                # Calculate amount of variables
+                vars = sum(
+                    v
+                    for k, v in json_compilation_statistics["statistics"].items()
+                    if "vars" in k.lower()
+                )
 
                 solutions = [r for r in json_rows if r["type"] == "solution"]
                 objectives = {
@@ -183,7 +192,8 @@ if __name__ == '__main__':
                     "status" : status,
                     "flat_time" : format_float(flat_time),
                     "solve_time" : solve_time,
-                    "objectives" : objectives
+                    "objectives" : objectives,
+                    "flatzinc_vars" : vars
                 }]
             except Exception as e:
                 # Something went very wrong during json readings. So wring that
