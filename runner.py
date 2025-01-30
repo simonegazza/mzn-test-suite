@@ -145,9 +145,6 @@ if __name__ == '__main__':
                 ]
 
                 json_rows = [json.loads(x) for x in fixed_results]
-                [print(json.dumps(x)) for x in json_rows]
-                print()
-                print()
 
                 json_statistics = [j for j in json_rows if j["type"] == "statistics"]
                 if len(json_statistics) == 0: # Compilation error
