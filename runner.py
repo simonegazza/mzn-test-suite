@@ -145,8 +145,8 @@ if __name__ == '__main__':
                             raise Exception("Exceeded max memory usage")
                         time.sleep(5)
                     except:
-                        time.sleep(1)
-                        p.kill()
+                        time.sleep(0.5) # wait a bit before terminating
+                        p.terminate()
                         break
 
                 output = p.stdout.read()
