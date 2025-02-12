@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import subprocess, json, sys, argparse, re, os, traceback
+import subprocess, json, sys, argparse, re, os, traceback, resource, time
 from pathlib import Path
 
 # Possible solvers
@@ -28,6 +28,26 @@ def print_to_file(data_file_name, solver_name, what):
     output_file_name = dzn_file_path.parent / (dzn_name + "-" + solver_name + "-json.log")
     with open(output_file_name, "a") as f:
         f.write(what)
+
+def pre_process():
+    # Set nicing level
+    os.nice(10)
+
+    # Check every 5 minutes if there is less than one user on the machine
+    minutes = 5
+    while True:
+        users = subprocess.run(
+            "who | grep -v \"$(whoami)\"",
+            stdout=subprocess.PIPE,
+            text=True,
+            shell=True
+        )
+        users = users.stdout.strip().split("\n")
+        users_num = len(users) if users[0] else 0
+        if users_num > 1:
+            time.sleep(minutes * 60)
+        else:
+            break
 
 def make_parseargs():
     parser = argparse.ArgumentParser(
@@ -95,7 +115,7 @@ if __name__ == '__main__':
                 "minizinc",
                 "--compiler-statistics",
                 "-f", "-s", "-a", #-f = free search, -s = statistics, -a = all (even intermediate) solutions
-                "-d", dzn_file_path,
+                "-d", str(dzn_file_path),
                 "--output-mode", "json", # This gives the object value under {}.json._objective
                 "--output-objective",
                 "--output-time", # This outputs time under every solution
@@ -103,30 +123,51 @@ if __name__ == '__main__':
                 "--json-stream", # This makes the output a json, so it is parsable
                 "--solver", solver_name,
                 "--time-limit", str(timeout),
-                Path(args.model).resolve()
+                str(Path(args.model).resolve())
             ]
+            p = subprocess.Popen(
+                " ".join(command),
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+                shell=True,
+                preexec_fn=pre_process
+            )
             try:
-                p = subprocess.run(
-                    command,
-                    stdout=subprocess.PIPE,
-                    text=True
-                )
+                # Make sure process never goes over half RAM
+                max_mem_allowed = os.sysconf('SC_PAGE_SIZE') * os.sysconf('SC_PHYS_PAGES') // 2
+                while p.poll() is None:
+                    try:
+                        result = subprocess.run("ps -o rss= -p " + str(p.pid), capture_output=True, text=True)
+                        mem_used = int(result.stdout.strip()) * 1024 # Convert to bytes
+                        if mem_used > max_mem_allowed:
+                            p.kill()
+                            raise Exception("Exceeded max memory usage")
+                        time.sleep(5)
+                    except:
+                        time.sleep(1)
+                        p.kill()
+                        break
 
-                process_output = p.stdout
+                output = p.stdout.read()
                 if p.returncode != 0:
+                    print(p.returncode)
                     dzn_name = str(os.path.basename(dzn_file_path))[:-4]
                     output_file_name = dzn_file_path.parent / (dzn_name + "-" + solver_name + "-run-error.log")
                     with open(output_file_name, "w") as f:
-                        f.write(process_output)
-                    raise Exception()
+                        f.write(output)
+                    raise Exception("MiniZinc failure")
 
-                processes[solver_name] += [{"data_file": dzn, "process": process_output}]
-            except:
+                processes[solver_name] += [{"data_file": dzn, "process": output}]
+            except Exception as e:
                 print(
-                    "Failure while running", dzn_file_path, "for solver", solver_name,
+                    "Failure while running", dzn_file_path, "for solver", solver_name, "with reason", e,
                     file=sys.stderr
                 )
-                processes[solver_name] += [{"data_file": dzn, "process": process_output}]
+                processes[solver_name] += [{
+                    "data_file": dzn,
+                    "process": p.stdout.read()
+                }]
                 continue
 
     results = {solver_name : [] for solver_name in processes.keys()}
@@ -145,7 +186,12 @@ if __name__ == '__main__':
                     for x in fixed_results
                 ]
 
-                json_rows = [json.loads(x) for x in fixed_results]
+                json_rows = []
+                for row in fixed_results:
+                    try:
+                        json_rows.append(json.loads(row))
+                    except:
+                        continue
 
                 json_statistics = [j for j in json_rows if j["type"] == "statistics"]
                 if len(json_statistics) == 0: # Compilation error
@@ -153,12 +199,11 @@ if __name__ == '__main__':
                     results[solver_name] += [{
                         "problem" : str(process_description["data_file"]),
                         "status" : "COMPILATION_ERROR",
-                        "what": error_row["what"],
-                        "message" : error_row["message"]
+                        "what": error_row["what"] if "what" in error_row else "UNCAUGHT ERROR",
+                        "message" : error_row["message"] if "message" in error_row else "???"
                     }]
                     continue
 
-                json_statistics = [j for j in json_rows if j["type"] == "statistics"]
                 json_compilation_statistics = json_statistics[0]
                 flat_time = json_compilation_statistics["statistics"]["flatTime"]
 
@@ -181,11 +226,14 @@ if __name__ == '__main__':
                     solve_time = json_last_status["time"] / 1000
                 except:
                     status = "SATISFIABLE" if len(objectives) != 0 else "UNKNOWN"
-                    json_stat = [j for j in json_statistics if "solveTime" in j["statistics"]][-1]
-                    solve_time = json_stat["statistics"]["solveTime"]
+                    json_solve_times = [j for j in json_statistics if "solveTime" in j["statistics"]]
+                    if len(json_solve_times) > 0:
+                        solve_time = json_solve_times[-1]["statistics"]["solveTime"]
+                    else:
+                        solve_time = timeout
 
                 if len([j for j in json_rows if j["type"] == "error"]) > 0:
-                    print_to_file(process_description["data_file"], solver_name, process_output)
+                    print_to_file(process_description["data_file"], solver_name, process_description["process"])
 
                 results[solver_name] += [{
                     "problem" : str(process_description["data_file"]),
@@ -208,7 +256,7 @@ if __name__ == '__main__':
                 print(traceback.print_exc(), file=sys.stderr)
 
                 # Save failed result into a file to later use
-                print_to_file(process_description["data_file"], solver_name, process_output)
+                print_to_file(process_description["data_file"], solver_name, process_description["process"])
                 continue
 
     # Be sure to save a into a file, even if a folder is set
